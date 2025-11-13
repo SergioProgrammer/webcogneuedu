@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		font-family: "Helvetica Neue", "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+		background-color: #f7f7f7;
+		color: #0f0f0f;
+	}
+
+	body {
+		@apply bg-background text-brand m-0 min-h-screen;
+	}
+
+	a {
+		@apply transition-colors duration-200;
+	}
+}

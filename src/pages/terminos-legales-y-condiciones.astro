@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	<main class="legal-page">
+		<header>
+			<p class="eyebrow">Legal documentation</p>
+			<h1>Legal Terms & Conditions of Use</h1>
+			<p class="lead">
+				This website presents the research activity of the CogNeuroEdu group at the UNED Faculty of Education. Accessing
+				the site implies acceptance of the conditions described below.
+			</p>
+		</header>
+
+		<section>
+			<h2>1. Identification</h2>
+			<p>
+				Controller: CogNeuroEdu Research Group · CogNeUEDU Chair (UNED). Address: C/ Juan del Rosal 14, 28040 Madrid,
+				Spain. Contact emails:
+				<a href="mailto:cogneuroedu@edu.uned.es">cogneuroedu@edu.uned.es</a> /
+				<a href="mailto:mt.m.aragoneses@edu.uned.es">mt.m.aragoneses@edu.uned.es</a>. Phone:
+				<a href="tel:+34913987384">+34 91 398 73 84</a>.
+			</p>
+		</section>
+
+		<section>
+			<h2>2. Purpose</h2>
+			<p>
+				The site provides information about research, transfer projects, and collaboration calls related to speech therapy
+				and neuroeducation. Content is informative and may be updated without prior notice to guarantee accuracy.
+			</p>
+		</section>
+
+		<section>
+			<h2>3. Conditions of use</h2>
+			<ul>
+				<li>Visitors commit to using the website respectfully and lawfully.</li>
+				<li>Reproducing large portions of content requires prior written authorization from CogNeuroEdu.</li>
+				<li>External links are provided for convenience; UNED does not endorse third-party content.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>4. Intellectual property</h2>
+			<p>
+				All texts, audiovisual pieces, and graphic resources belong to CogNeuroEdu or the credited authors. UNED and
+				CogNeuroEdu brands are protected. Citing content is allowed when linking to the original source and acknowledging
+				UNED.
+			</p>
+		</section>
+
+		<section>
+			<h2>5. Liability</h2>
+			<p>
+				Content must not be interpreted as clinical diagnosis or therapeutic prescription. For any intervention, please
+				contact accredited professionals from the Faculty of Education or partner centers. Visitors assume responsibility
+				for how they use the information provided.
+			</p>
+		</section>
+
+		<section id="rgpd">
+			<h2>6. Data protection (GDPR)</h2>
+			<p>
+				Data collected via forms or email is used solely to answer inquiries or coordinate academic collaboration, based on
+				the public interest exception for scientific research. Data is stored on UNED infrastructure and kept only for the
+				time needed to meet administrative obligations. You can exercise access, rectification, or erasure rights by
+				emailing <a href="mailto:cogneuroedu@edu.uned.es">cogneuroedu@edu.uned.es</a>.
+			</p>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.legal-page {
+		padding: calc(var(--nav-height, 72px) + 3rem) var(--page-padding, clamp(1.5rem, 4vw, 3rem)) 3rem;
+		max-width: 960px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	header .eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.25em;
+		font-size: 0.8rem;
+		color: #666;
+		margin: 0;
+	}
+
+	header h1 {
+		font-size: clamp(2rem, 3vw, 3rem);
+		margin: 0.5rem 0;
+	}
+
+	.lead {
+		font-size: 1.05rem;
+		color: #3a3a3a;
+		margin: 0;
+	}
+
+	section h2 {
+		margin-bottom: 0.5rem;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+
+	p,
+	ul {
+		margin: 0;
+		line-height: 1.7;
+		color: #1f1f1f;
+	}
+
+	ul {
+		padding-left: 1.25rem;
+	}
+
+	a {
+		color: inherit;
+		font-weight: 600;
+	}
+</style>
