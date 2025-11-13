@@ -4,19 +4,19 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
 	<nav
-		class="fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between border-b border-black/10 bg-background/95 px-6 pl-8 pr-6 text-base backdrop-blur-md md:px-12"
+		class="fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between border-b border-[#d9cfc0] bg-[#f7f4ea]/95 px-6 pl-8 pr-6 text-base text-[#1d2f50] backdrop-blur-md md:px-12"
 		aria-label="Primary navigation"
 	>
 		<a class="text-base font-semibold uppercase tracking-[0.25em]" href="#inicio">CogNeUEDU</a>
 		<ul class="flex flex-wrap items-center gap-4 text-sm uppercase tracking-[0.2em] md:text-base">
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#inicio">Home</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="/team">Team</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#investigacion">Research</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#transferencia">Outreach</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#contacto">Contact</a></li>
+			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#inicio">Home</a></li>
+			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="/team">Team</a></li>
+			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#investigacion">Research</a></li>
+			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#transferencia">Outreach</a></li>
+			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#contacto">Contact</a></li>
 			<li>
 				<a
-					class="rounded-full border border-brand px-5 py-1.5 text-sm tracking-[0.3em] hover:bg-brand hover:text-white"
+					class="rounded-full border border-[#d08e29]/50 px-5 py-1.5 text-sm tracking-[0.3em] hover:bg-[#d08e29] hover:text-white"
 					href="#participa"
 				>
 					Join
@@ -25,40 +25,40 @@ import Layout from "../layouts/Layout.astro";
 		</ul>
 	</nav>
 
-	<main class="flex w-full flex-col gap-10 px-10 pt-32 pb-16 text-brand md:px-24 lg:px-28" id="inicio">
-		<header class="grid gap-x-10 gap-y-4 border-b border-neutral-900/90 pb-6 text-lg md:grid-cols-[220px_auto]">
+	<main class="flex w-full flex-col gap-10 bg-[#f7f4ea] px-10 pt-32 pb-16 text-[#1d2f50] md:px-24 lg:px-28" id="inicio">
+		<header class="grid gap-x-10 gap-y-4 border-b border-[#d9cfc0] pb-6 text-lg md:grid-cols-[220px_auto]">
 			<div class="flex items-start space-x-4 text-6xl font-medium tracking-[0.2em] md:text-7xl" aria-hidden="true">
 				<span>C</span>
 				<span>N</span>
 				<span>E</span>
 			</div>
-			<div class="flex flex-col gap-2 text-sm uppercase tracking-[0.2em] text-neutral-500 md:text-base">
-				<div class="flex items-center gap-2 text-brand text-base md:text-lg">
+			<div class="flex flex-col gap-2 text-sm uppercase tracking-[0.2em] text-[#6b728d] md:text-base">
+				<div class="flex items-center gap-2 text-[#1d2f50] text-base md:text-lg">
 					<span class="text-xl">↑</span>
-					Research line · Speech Therapy · UNED · CogNeuEdu
+					Research line · Speech Therapy · UNED · CogNeuroEdu
 				</div>
 				<nav class="flex flex-wrap gap-4 text-sm md:text-base" aria-label="Quick links">
-					<a class="border-b border-transparent pb-1 hover:border-brand" href="#proyectos">Projects</a>
+					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#proyectos">Projects</a>
 					<span>· Madrid · </span>
-					<a class="border-b border-transparent pb-1 hover:border-brand" href="#info">About</a>
-					<a class="border-b border-transparent pb-1 hover-border-brand" href="#contacto">· Write to us</a>
+					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#info">About</a>
+					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#contacto">· Write to us</a>
 				</nav>
 			</div>
-			<p class="text-sm uppercase tracking-[0.2em] text-neutral-500 md:col-span-2">Educational Project· ©</p>
+			<p class="text-sm uppercase tracking-[0.2em] text-[#6b728d] md:col-span-2">Educational creativity · ©2024</p>
 		</header>
 
 			<section class="grid gap-8 lg:grid-cols-2" id="investigacion">
-				<article class="flex flex-col gap-5 rounded-[1.5rem] bg-white p-10 text-lg leading-relaxed shadow-editorial" id="equipo">
+				<article class="flex flex-col gap-5 rounded-[32px] bg-white/95 p-10 text-lg leading-relaxed text-[#1d2f50] shadow-[0_18px_50px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]" id="equipo">
 					<h1 class="text-4xl font-semibold leading-tight md:text-[2.8rem]">
 						CogNeUEDU Lab.
-						<span class="block text-3xl font-normal text-neutral-500">Speech Therapy Division · UNED.</span>
+						<span class="block text-3xl font-normal text-[#6b728d]">Speech Therapy Division · UNED.</span>
 					</h1>
-					<p class="text-lg leading-relaxed text-neutral-700">
+					<p class="text-lg leading-relaxed text-[#4d5672]">
 						We investigate the relationship among creativity, language, and neuroeducation to co-design early
 						intervention programs for speech and communication disorders. Clinicians, teachers, and experience designers
 						collaborate to craft methodologies that adapt to every learning pace.
 					</p>
-					<p class="text-lg leading-relaxed text-neutral-700">
+					<p class="text-lg leading-relaxed text-[#4d5672]">
 						Our work draws on contemporary visual culture, universal accessibility, and the evidence produced by the
 						CogNeUEDU-UNED Chair. The materials we create travel from rural classrooms to reference hospitals across
 						Madrid.
@@ -66,52 +66,52 @@ import Layout from "../layouts/Layout.astro";
 					<div class="space-y-3" id="participa">
 						<a
 							id="contacto"
-							class="inline-flex items-center justify-center rounded-full bg-brand px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white hover:bg-black"
+							class="inline-flex items-center justify-center rounded-full bg-[#d08e29] px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-[0_12px_30px_rgba(208,142,41,0.35)] transition hover:bg-[#1d2f50]"
 							href="mailto:cogneu@uned.es"
 						>
 							Email the team
 						</a>
-						<span class="block text-base text-neutral-500">Open calendar for international collaborations.</span>
+						<span class="block text-base text-[#6b728d]">Open calendar for international collaborations.</span>
 					</div>
 				</article>
 
-			<figure class="flex flex-col justify-center rounded-[1.5rem] bg-neutral-100 p-6 shadow-editorial" id="proyectos">
+			<figure class="flex flex-col justify-center rounded-[32px] bg-white p-6 shadow-[0_18px_50px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]" id="proyectos">
 				<img
 					src="/6210.jpg"
 					alt="Green notebook opened with the word Bibliography"
 					loading="lazy"
-					class="h-full w-full rounded-2xl object-cover saturate-[0.85]"
+					class="h-full w-full rounded-2xl object-cover saturate-[0.85] ring-1 ring-[#d9cfc0]"
 				/>
-				<figcaption class="mt-4 text-right text-base text-neutral-600">
+				<figcaption class="mt-4 text-right text-base text-[#6b728d]">
 					Abstract representation of neural network.
 				</figcaption>
 			</figure>
 		</section>
 
-		<section class="grid gap-8 border-y border-neutral-900/80 py-10 text-lg md:grid-cols-[minmax(0,1fr)_auto_auto]" id="transferencia">
+		<section class="grid gap-8 border-y border-[#d9cfc0] py-10 text-lg text-[#1d2f50] md:grid-cols-[minmax(0,1fr)_auto_auto]" id="transferencia">
 			<div>
-				<h2 class="mb-4 text-sm uppercase tracking-[0.3em] text-neutral-500">Active areas</h2>
-				<ul class="space-y-3 text-base font-semibold uppercase tracking-[0.2em] text-brand">
-					<li class="flex gap-4"><span class="text-neutral-400">06</span>Creative neuroeducation</li>
-					<li class="flex gap-4"><span class="text-neutral-400">03</span>Social-first · Family communities</li>
-					<li class="flex gap-4"><span class="text-neutral-400">04</span>Health brand identity</li>
-					<li class="flex gap-4"><span class="text-neutral-400">04</span>Full-stack tools for clinics</li>
-					<li class="flex gap-4"><span class="text-neutral-400">14</span>Observatory of every project</li>
+				<h2 class="mb-4 text-sm uppercase tracking-[0.3em] text-[#6b728d]">Active areas</h2>
+				<ul class="space-y-3 text-base font-semibold uppercase tracking-[0.2em] text-[#1d2f50]">
+					<li class="flex gap-4"><span class="text-[#d08e29]">06</span>Creative neuroeducation</li>
+					<li class="flex gap-4"><span class="text-[#d08e29]">03</span>Social-first · Family communities</li>
+					<li class="flex gap-4"><span class="text-[#d08e29]">04</span>Health brand identity</li>
+					<li class="flex gap-4"><span class="text-[#d08e29]">04</span>Full-stack tools for clinics</li>
+					<li class="flex gap-4"><span class="text-[#d08e29]">14</span>Observatory of every project</li>
 				</ul>
 			</div>
-			<div class="flex flex-col gap-3 text-base uppercase tracking-[0.2em] text-neutral-500">
+			<div class="flex flex-col gap-3 text-base uppercase tracking-[0.2em] text-[#6b728d]">
 				<span>↓ Documentation</span>
-				<a class="border-b border-transparent pb-1 text-brand hover:border-brand" href="#">
-					Typesetting: Name of Work
+				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">
+					Typesetting: Feminist Code
 				</a>
 			</div>
-			<div class="flex flex-col gap-3 text-base uppercase tracking-[0.2em] text-neutral-500">
+			<div class="flex flex-col gap-3 text-base uppercase tracking-[0.2em] text-[#6b728d]">
 				<span>↓ Latest project</span>
-				<a class="border-b border-transparent pb-1 text-brand hover:border-brand" href="#">Investigating Since · ©2024</a>
+				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">Branding · ©2019</a>
 			</div>
 			<div class="col-span-full mt-10 grid gap-8 lg:grid-cols-3">
-				<article class="flex flex-col gap-4 rounded-2xl border border-neutral-200 bg-white p-6 shadow-editorial">
-					<div class="flex h-48 items-center justify-center rounded-xl bg-neutral-50 p-6">
+				<article class="flex flex-col gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+					<div class="flex h-48 items-center justify-center rounded-xl bg-[#f7f4ea] p-6">
 						<img
 							src="/CATEDRA-CONJUNTO.webp"
 							alt="International Chair in Cognitive Health"
@@ -120,8 +120,8 @@ import Layout from "../layouts/Layout.astro";
 						/>
 					</div>
 					<div>
-						<h3 class="text-2xl font-semibold">International Chair in Cognitive Health</h3>
-						<p class="text-base leading-relaxed text-neutral-700">
+						<h3 class="text-2xl font-semibold text-[#1d2f50]">International Chair in Cognitive Health</h3>
+						<p class="text-base leading-relaxed text-[#4d5672]">
 							The UNED CogNeuroEdu Research Group belongs to this research network on Cognitive Health, which aims to
 							create, manage, and transfer scientific knowledge on cognitive health to enhance quality of life and
 							foster healthy cognitive profiles. The Chair is sponsored by the Fundación Antonio de Nebrija and
@@ -129,8 +129,8 @@ import Layout from "../layouts/Layout.astro";
 						</p>
 					</div>
 				</article>
-				<article class="flex flex-col gap-4 rounded-2xl border border-neutral-200 bg-white p-6 shadow-editorial">
-					<div class="flex h-48 items-center justify-center rounded-xl bg-neutral-50 p-6">
+				<article class="flex flex-col gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+					<div class="flex h-48 items-center justify-center rounded-xl bg-[#f7f4ea] p-6">
 						<img
 							src="/IMIENS-OK.png"
 							alt="CLAE collaboration"
@@ -139,16 +139,16 @@ import Layout from "../layouts/Layout.astro";
 						/>
 					</div>
 					<div>
-						<h3 class="text-2xl font-semibold">Instituto Mixto de Investigación</h3>
-						<p class="text-base leading-relaxed text-neutral-700">
+						<h3 class="text-2xl font-semibold text-[#1d2f50]">Instituto Mixto de Investigación</h3>
+						<p class="text-base leading-relaxed text-[#4d5672]">
 							EL IMIENS quiere cubrir la demanda de formación permanente de los profesionales del sector de la sanidad,
 							potenciar la investigación y la colaboración entre grupos en temas relacionados con la salud y servir de 
 							apoyo a todas las instituciones que trabajan en este campo.
 						</p>
 					</div>
 				</article>
-				<article class="flex flex-col gap-4 rounded-2xl border border-neutral-200 bg-white p-6 shadow-editorial">
-					<div class="flex h-48 items-center justify-center rounded-xl bg-neutral-50 p-6">
+				<article class="flex flex-col gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+					<div class="flex h-48 items-center justify-center rounded-xl bg-[#f7f4ea] p-6">
 						<img
 							src="/SCAND.webp"
 							alt="SCAND Cognition visual"
@@ -157,8 +157,8 @@ import Layout from "../layouts/Layout.astro";
 						/>
 					</div>
 					<div>
-						<h3 class="text-2xl font-semibold">SCAND Cognition</h3>
-						<p class="text-base leading-relaxed text-neutral-700">
+						<h3 class="text-2xl font-semibold text-[#1d2f50]">SCAND Cognition</h3>
+						<p class="text-base leading-relaxed text-[#4d5672]">
 							The Spanish Consortium for Ageing Normative Data (SCAND) shares data on the Spanish middle-aged and
 							older adult population to establish normative data for common cognitive tests and to study their
 							longitudinal predictive value regarding SCD, MCI, or conversion to dementia.

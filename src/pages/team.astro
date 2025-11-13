@@ -7,9 +7,9 @@ import Layout from "../layouts/Layout.astro";
 		class="fixed mb-0 inset-x-0 top-0 z-50 flex h-20 items-center justify-between border-b border-black/10 bg-background/95 px-6 pl-8 pr-6 text-base backdrop-blur-md md:px-12"
 		aria-label="Primary navigation"
 	>
-		<a class="text-base font-semibold uppercase tracking-[0.25em]" href="#inicio">CogNeUEDU</a>
+		<a class="text-base font-semibold uppercase tracking-[0.25em]" href="/">CogNeUEDU</a>
 		<ul class="flex flex-wrap items-center gap-4 text-sm uppercase tracking-[0.2em] md:text-base">
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#inicio">Home</a></li>
+			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="/">Home</a></li>
 			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="/team">Team</a></li>
 			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#investigacion">Research</a></li>
 			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#transferencia">Outreach</a></li>
@@ -24,10 +24,10 @@ import Layout from "../layouts/Layout.astro";
 			</li>
 		</ul>
 	</nav>
-	<main class="flex flex-col gap-12 px-6 pt-32 pb-16 text-brand md:px-16 lg:px-24">
-		<header class="flex flex-col gap-4 text-lg text-neutral-700">
-			<h1 class="text-4xl font-semibold text-brand">Team</h1>
-			<p class="max-w-3xl leading-relaxed">
+	<main class="flex flex-col gap-12 bg-[#f7f4ea] px-6 pt-32 pb-16 text-brand md:px-16 lg:px-24">
+		<header class="flex flex-col gap-4 text-lg text-[#445066]">
+			<h1 class="text-4xl font-semibold text-[#1d2f50]">Team</h1>
+			<p class="max-w-3xl leading-relaxed text-[#4d5672]">
 				Each portrait links to the academic identity of our researchers. The icons under every name reference their ORCID,
 				email, and institutional profile so you can contact them directly.
 			</p>
@@ -35,293 +35,293 @@ import Layout from "../layouts/Layout.astro";
 
 		<section class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 			<!-- María Teresa -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/Maria.webp" alt="Portrait of María Teresa Martín-Aragoneses" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>M</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>M</span></div>
 				</div>
-				<h2>María Teresa Martín-Aragoneses</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
-				<p class="text-[11px] uppercase tracking-[0.35em] text-neutral-600">Principal Investigator</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">María Teresa Martín-Aragoneses</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
+				<p class="text-[11px] uppercase tracking-[0.35em] text-[#d08e29]">Principal Investigator</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for María Teresa Martín-Aragoneses">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for María Teresa Martín-Aragoneses">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email María Teresa Martín-Aragoneses">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email María Teresa Martín-Aragoneses">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of María Teresa Martín-Aragoneses">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of María Teresa Martín-Aragoneses">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 			<!-- Irene Cadime -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/irene-c.webp" alt="Portrait of Irene Cadime" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>I</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>I</span></div>
 				</div>
-				<h2>Irene Cadime</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Assistant Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Irene Cadime</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Assistant Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Irene Cadime">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Irene Cadime">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Irene Cadime">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Irene Cadime">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Irene Cadime">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Irene Cadime">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 			<!-- Barbara Conboy -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/barbara.webp" alt="Portrait of Barbara Conboy" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>B</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>B</span></div>
 				</div>
-				<h2>Barbara Conboy</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Barbara Conboy</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Barbara Conboy">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Barbara Conboy">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Barbara Conboy">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Barbara Conboy">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Barbara Conboy">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Barbara Conboy">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- David del Río Grande -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/david.webp" alt="Portrait of David del Río Grande" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>D</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>D</span></div>
 				</div>
-				<h2>David del Río Grande</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">David del Río Grande</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for David del Río Grande">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for David del Río Grande">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email David del Río Grande">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email David del Río Grande">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of David del Río Grande">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of David del Río Grande">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Miguel Ángel Fernández-Blázquez -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/miguel.webp" alt="Portrait of Miguel Ángel Fernández-Blázquez" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>M</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>M</span></div>
 				</div>
-				<h2>Miguel Ángel Fernández-Blázquez</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Miguel Ángel Fernández-Blázquez</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Miguel Ángel Fernández-Blázquez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Miguel Ángel Fernández-Blázquez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Miguel Ángel Fernández-Blázquez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Miguel Ángel Fernández-Blázquez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Miguel Ángel Fernández-Blázquez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Miguel Ángel Fernández-Blázquez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Carlos Gallego López -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/carlos.webp" alt="Portrait of Carlos Gallego López" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
 				</div>
-				<h2>Carlos Gallego López</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Carlos Gallego López</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Carlos Gallego López">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Carlos Gallego López">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Carlos Gallego López">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Carlos Gallego López">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Carlos Gallego López">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Carlos Gallego López">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Encarnación Hernández Pérez -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/encarnacion.webp" alt="Portrait of Encarnación Hernández Pérez" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>E</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>E</span></div>
 				</div>
-				<h2>Encarnación Hernández Pérez</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Encarnación Hernández Pérez</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Encarnación Hernández Pérez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Encarnación Hernández Pérez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Encarnación Hernández Pérez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Encarnación Hernández Pérez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Encarnación Hernández Pérez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Encarnación Hernández Pérez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Irene Puerta-Araña -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/irene.webp" alt="Portrait of Irene Puerta-Araña" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>I</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>I</span></div>
 				</div>
-				<h2>Irene Puerta-Araña</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Predoctoral Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Irene Puerta-Araña</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Predoctoral Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Irene Puerta-Araña">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Irene Puerta-Araña">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Irene Puerta-Araña">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Irene Puerta-Araña">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Irene Puerta-Araña">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Irene Puerta-Araña">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Raquel Rodríguez Fernández -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/raquel.webp" alt="Portrait of Raquel Rodríguez Fernández" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>R</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>R</span></div>
 				</div>
-				<h2>Raquel Rodríguez Fernández</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Raquel Rodríguez Fernández</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Raquel Rodríguez Fernández">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Raquel Rodríguez Fernández">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Raquel Rodríguez Fernández">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Raquel Rodríguez Fernández">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Raquel Rodríguez Fernández">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Raquel Rodríguez Fernández">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Celia Teira-Serrano -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/celia.webp" alt="Portrait of Celia Teira-Serrano" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
 				</div>
-				<h2>Celia Teira-Serrano</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Celia Teira-Serrano</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Celia Teira-Serrano">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Celia Teira-Serrano">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Celia Teira-Serrano">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Celia Teira-Serrano">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Celia Teira-Serrano">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Celia Teira-Serrano">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Carolina Villahoz Torio -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/carolina.jpg" alt="Portrait of Carolina Villahoz Torio" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
 				</div>
-				<h2>Carolina Villahoz Torio</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Research Support Technician</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Carolina Villahoz Torio</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Research Support Technician</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Carolina Villahoz Torio">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Carolina Villahoz Torio">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Carolina Villahoz Torio">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Carolina Villahoz Torio">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Carolina Villahoz Torio">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Carolina Villahoz Torio">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Ángela Zamora Menéndez -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/angela.jpg" alt="Portrait of Ángela Zamora Menéndez" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>A</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>A</span></div>
 				</div>
-				<h2>Ángela Zamora Menéndez</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Ángela Zamora Menéndez</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Ángela Zamora Menéndez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Ángela Zamora Menéndez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Ángela Zamora Menéndez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Ángela Zamora Menéndez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Ángela Zamora Menéndez">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Ángela Zamora Menéndez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Carolina (Research Group) -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/carolina2.webp" alt="Portrait of Carolina from the research group" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
 				</div>
-				<h2>Carolina (Research Group)</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Carolina (Research Group)</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Carolina (Research Group)">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Carolina (Research Group)">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Carolina (Research Group)">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Carolina (Research Group)">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Carolina (Research Group)">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Carolina (Research Group)">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 					</a>
 				</div>
 			</article>
 
 			<!-- Vicenç Torrens García -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_18px_45px_rgba(0,0,0,0.08)] ring-1 ring-black/5">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-black/10 bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
 					<img src="/vicenc.webp" alt="Portrait of Vicenç Torrens García" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
-					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#0f0f0f] to-[#3f3f3f] text-2xl font-semibold text-white" aria-hidden="true"><span>V</span></div>
+					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>V</span></div>
 				</div>
-				<h2>Vicenç Torrens García</h2>
-				<p class="text-sm uppercase tracking-[0.2em] text-neutral-500">Associate Professor & Researcher</p>
+				<h2 class="text-lg font-semibold text-[#1d2f50]">Vicenç Torrens García</h2>
+				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<div class="mt-4 flex gap-3">
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="#" aria-label="ORCID for Vicenç Torrens García">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Vicenç Torrens García">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Vicenç Torrens García">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="mailto:cogneuroedu@edu.uned.es" aria-label="Email Vicenç Torrens García">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16c.55 0 1 .45 1 1v10c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zm0 2v8h16V8l-8 5-8-5zm8 3 8-5H4l8 5z" /></svg>
 					</a>
-					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-black/10 text-black transition hover:bg-black hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Vicenç Torrens García">
+					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="https://www.uned.es/" target="_blank" rel="noreferrer" aria-label="University profile of Vicenç Torrens García">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5zm0 7L4 6v9h2v-4l6 3 6-3v4h2V6l-8 4zm-6 8h12v2H6v-2z" /></svg>
 		</section>
 	</main>
