@@ -5,10 +5,10 @@ import Navbar from "../components/Navbar.astro";
 
 <Layout>
 	<Navbar />
-	<main class="flex flex-col gap-12 bg-[#f7f4ea] px-6 pt-32 pb-16 text-brand md:px-16 lg:px-24">
-		<header class="flex flex-col gap-4 text-lg text-[#445066]">
-			<h1 class="text-4xl font-semibold text-[#1d2f50]">Team</h1>
-			<p class="max-w-3xl leading-relaxed text-[#4d5672]">
+	<main class="flex flex-col gap-12 bg-[#f7f4ea] px-4 pt-28 pb-16 text-brand sm:px-8 md:px-16 md:pt-32 lg:px-24">
+		<header class="flex flex-col gap-4 text-base text-[#445066] sm:text-lg">
+			<h1 class="text-3xl font-semibold text-[#1d2f50] sm:text-4xl">Team</h1>
+			<p class="max-w-3xl text-sm leading-relaxed text-[#4d5672] sm:text-base">
 				Each portrait links to the academic identity of our researchers. The icons under every name reference their ORCID,
 				email, and institutional profile so you can contact them directly.
 			</p>
@@ -16,15 +16,15 @@ import Navbar from "../components/Navbar.astro";
 
 		<section class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 			<!-- María Teresa -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/Maria.webp" alt="Portrait of María Teresa Martín-Aragoneses" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>M</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">María Teresa Martín-Aragoneses</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">María Teresa Martín-Aragoneses</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
 				<p class="text-[11px] uppercase tracking-[0.35em] text-[#d08e29]">Principal Investigator</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for María Teresa Martín-Aragoneses">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -37,14 +37,14 @@ import Navbar from "../components/Navbar.astro";
 				</div>
 			</article>
 			<!-- Irene Cadime -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/irene.webp" alt="Portrait of Irene Cadime" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>I</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Irene Cadime</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Irene Cadime</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Assistant Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Irene Cadime">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -57,14 +57,14 @@ import Navbar from "../components/Navbar.astro";
 				</div>
 			</article>
 			<!-- Barbara Conboy -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/barbara.webp" alt="Portrait of Barbara Conboy" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>B</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Barbara Conboy</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Barbara Conboy</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Barbara Conboy">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -78,14 +78,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- David del Río Grande -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/david.webp" alt="Portrait of David del Río Grande" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>D</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">David del Río Grande</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">David del Río Grande</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for David del Río Grande">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -99,14 +99,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Miguel Ángel Fernández-Blázquez -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/miguel.webp" alt="Portrait of Miguel Ángel Fernández-Blázquez" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>M</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Miguel Ángel Fernández-Blázquez</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Miguel Ángel Fernández-Blázquez</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Miguel Ángel Fernández-Blázquez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -120,14 +120,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Carlos Gallego López -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/carlos.webp" alt="Portrait of Carlos Gallego López" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Carlos Gallego López</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Carlos Gallego López</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Carlos Gallego López">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -141,14 +141,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Encarnación Hernández Pérez -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/encarnacion.webp" alt="Portrait of Encarnación Hernández Pérez" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>E</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Encarnación Hernández Pérez</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Encarnación Hernández Pérez</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Encarnación Hernández Pérez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -162,14 +162,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Irene Puerta-Araña -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/irenep.jpg" alt="Portrait of Irene Puerta-Araña" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>I</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Irene Puerta-Araña</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Irene Puerta-Araña</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Predoctoral Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Irene Puerta-Araña">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -183,14 +183,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Raquel Rodríguez Fernández -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/raquel.webp" alt="Portrait of Raquel Rodríguez Fernández" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>R</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Raquel Rodríguez Fernández</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Raquel Rodríguez Fernández</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Raquel Rodríguez Fernández">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -204,14 +204,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Celia Teira-Serrano -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/celia.webp" alt="Portrait of Celia Teira-Serrano" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Celia Teira-Serrano</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Celia Teira-Serrano</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Celia Teira-Serrano">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -225,14 +225,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Carolina Villahoz Torio -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/carolina.jpg" alt="Portrait of Carolina Villahoz Torio" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Carolina Villahoz Torio</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Carolina Villahoz Torio</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Research Support Technician</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Carolina Villahoz Torio">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -246,14 +246,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Ángela Zamora Menéndez -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/angela.jpg" alt="Portrait of Ángela Zamora Menéndez" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>A</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Ángela Zamora Menéndez</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Ángela Zamora Menéndez</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Ángela Zamora Menéndez">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -267,14 +267,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Carolina (Research Group) -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/carolina2.webp" alt="Portrait of Carolina from the research group" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>C</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Carolina (Research Group)</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Carolina (Research Group)</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Carolina (Research Group)">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>
@@ -288,14 +288,14 @@ import Navbar from "../components/Navbar.astro";
 			</article>
 
 			<!-- Vicenç Torrens García -->
-			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
+			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-5 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 sm:text-base">
+				<div class="relative mx-auto h-24 w-24 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner sm:h-28 sm:w-28">
 					<img src="/vicenc.webp" alt="Portrait of Vicenç Torrens García" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>V</span></div>
 				</div>
-				<h2 class="text-lg font-semibold text-[#1d2f50]">Vicenç Torrens García</h2>
+				<h2 class="text-base font-semibold text-[#1d2f50] sm:text-lg">Vicenç Torrens García</h2>
 				<p class="text-sm uppercase tracking-[0.15em] text-[#6b728d]">Associate Professor & Researcher</p>
-				<div class="mt-4 flex gap-3">
+				<div class="mt-4 flex flex-wrap items-center justify-center gap-3">
 					<a class="flex h-9 w-9 items-center justify-center rounded-full border border-[#d08e29]/40 text-[#1d2f50] transition hover:bg-[#d08e29] hover:text-white" href="#" aria-label="ORCID for Vicenç Torrens García">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" /><text x="12" y="15" text-anchor="middle" font-size="9" font-family="sans-serif" fill="currentColor">iD</text></svg>
 					</a>

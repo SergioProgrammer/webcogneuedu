@@ -1,26 +1,109 @@
 ---
 ---
+---
 
-<nav
-		class="fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between border-b border-[#d9cfc0] bg-[#f7f4ea]/95 px-6 pl-8 pr-6 text-base text-[#1d2f50] backdrop-blur-md md:px-12"
-		aria-label="Primary navigation"
-	>
-		<a href="#inicio" class="flex items-center gap-3">
-			<img src="/imago.svg" alt="CogNeuroEdu logo" class="h-12 w-auto" />
-		</a>
-		<ul class="flex flex-wrap items-center gap-4 text-sm uppercase tracking-[0.2em] md:text-base">
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#inicio">Home</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="/team">Team</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#investigacion">Research</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#transferencia">Outreach</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#contacto">Contact</a></li>
+<nav class="fixed inset-x-0 top-0 z-50 border-b border-[#d9cfc0] bg-[#f7f4ea]/95 backdrop-blur-md" aria-label="Primary navigation">
+	<div class="mx-auto flex w-full flex-col gap-4 px-4 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#1d2f50] sm:px-5 sm:text-sm md:flex-row md:items-center md:justify-between md:px-8 lg:px-10">
+		<div class="flex items-center justify-between gap-3">
+			<a href="#inicio" class="flex items-center gap-3">
+				<span class="sr-only">Return to start</span>
+				<img src="/imago.svg" alt="CogNeuroEdu logo" class="h-12 w-auto" />
+			</a>
+			<button
+				type="button"
+				data-nav-toggle
+				class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#d9cfc0]/70 text-[#1d2f50] transition hover:border-[#1d2f50] hover:bg-white md:hidden"
+				aria-expanded="false"
+				aria-controls="primary-navigation"
+			>
+				<span class="sr-only">Abrir menú</span>
+				<svg data-icon="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8">
+					<path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+				</svg>
+				<svg data-icon="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8">
+					<path d="M6 6l12 12M6 18L18 6" stroke-linecap="round" />
+				</svg>
+			</button>
+		</div>
+		<ul
+			id="primary-navigation"
+			class="hidden flex-col gap-3 border-t border-[#d9cfc0]/70 pt-4 text-[11px] tracking-[0.28em] md:flex md:flex-row md:items-center md:gap-6 md:border-none md:pt-0 md:text-sm md:tracking-[0.2em]"
+		>
+			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="#inicio">Home</a></li>
+			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="/team">Team</a></li>
+			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="#investigacion">Research</a></li>
+			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="#transferencia">Outreach</a></li>
+			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="#contacto">Contact</a></li>
 			<li>
 				<a
-					class="rounded-full border border-[#d08e29]/50 px-5 py-1.5 text-sm tracking-[0.3em] hover:bg-[#d08e29] hover:text-white"
+					class="inline-flex w-full items-center justify-center rounded-full border border-[#d08e29]/50 px-5 py-2 text-[11px] tracking-[0.35em] hover:bg-[#d08e29] hover:text-white md:w-auto"
 					href="#participa"
 				>
 					Join
 				</a>
 			</li>
 		</ul>
-	</nav>
+	</div>
+</nav>
+
+<script>
+	const setupNavigation = () => {
+		const toggle = document.querySelector('[data-nav-toggle]');
+		const menu = document.getElementById('primary-navigation');
+		const openIcon = toggle?.querySelector('[data-icon="open"]');
+		const closeIcon = toggle?.querySelector('[data-icon="close"]');
+		const mq = window.matchMedia('(min-width: 768px)');
+
+		const updateIcons = (isOpen) => {
+			openIcon?.classList.toggle('hidden', isOpen);
+			closeIcon?.classList.toggle('hidden', !isOpen);
+		};
+
+		const closeMenu = () => {
+			toggle?.setAttribute('aria-expanded', 'false');
+			menu?.classList.add('hidden');
+			updateIcons(false);
+		};
+
+		toggle?.addEventListener('click', () => {
+			const expanded = toggle.getAttribute('aria-expanded') === 'true';
+			const nextState = !expanded;
+			toggle.setAttribute('aria-expanded', String(nextState));
+			if (nextState) {
+				menu?.classList.remove('hidden');
+			} else {
+				menu?.classList.add('hidden');
+			}
+			updateIcons(nextState);
+		});
+
+		menu?.querySelectorAll('a').forEach((link) => {
+			link.addEventListener('click', () => {
+				if (!mq.matches) {
+					closeMenu();
+				}
+			});
+		});
+
+		const syncMenuState = () => {
+			if (mq.matches) {
+				menu?.classList.remove('hidden');
+				toggle?.setAttribute('aria-expanded', 'false');
+				updateIcons(false);
+			} else if (toggle?.getAttribute('aria-expanded') === 'false') {
+				menu?.classList.add('hidden');
+			}
+		};
+
+		mq.addEventListener('change', syncMenuState);
+		syncMenuState();
+	};
+
+	if (typeof window !== 'undefined') {
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', setupNavigation, { once: true });
+		} else {
+			setupNavigation();
+		}
+	}
+</script>
