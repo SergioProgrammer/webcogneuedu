@@ -1,29 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout>
-	<nav
-		class="fixed mb-0 inset-x-0 top-0 z-50 flex h-20 items-center justify-between border-b border-black/10 bg-background/95 px-6 pl-8 pr-6 text-base backdrop-blur-md md:px-12"
-		aria-label="Primary navigation"
-	>
-		<a class="text-base font-semibold uppercase tracking-[0.25em]" href="/">CogNeUEDU</a>
-		<ul class="flex flex-wrap items-center gap-4 text-sm uppercase tracking-[0.2em] md:text-base">
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="/">Home</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="/team">Team</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#investigacion">Research</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#transferencia">Outreach</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-brand" href="#contacto">Contact</a></li>
-			<li>
-				<a
-					class="rounded-full border border-brand px-5 py-1.5 text-sm tracking-[0.3em] hover:bg-brand hover:text-white"
-					href="#participa"
-				>
-					Join
-				</a>
-			</li>
-		</ul>
-	</nav>
+	<Navbar />
 	<main class="flex flex-col gap-12 bg-[#f7f4ea] px-6 pt-32 pb-16 text-brand md:px-16 lg:px-24">
 		<header class="flex flex-col gap-4 text-lg text-[#445066]">
 			<h1 class="text-4xl font-semibold text-[#1d2f50]">Team</h1>
@@ -58,7 +39,7 @@ import Layout from "../layouts/Layout.astro";
 			<!-- Irene Cadime -->
 			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
 				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
-					<img src="/irene-c.webp" alt="Portrait of Irene Cadime" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
+					<img src="/irene.webp" alt="Portrait of Irene Cadime" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>I</span></div>
 				</div>
 				<h2 class="text-lg font-semibold text-[#1d2f50]">Irene Cadime</h2>
@@ -183,7 +164,7 @@ import Layout from "../layouts/Layout.astro";
 			<!-- Irene Puerta-Araña -->
 			<article class="flex flex-col items-center gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-center shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
 				<div class="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9cfc0] bg-neutral-50 shadow-inner">
-					<img src="/irene.webp" alt="Portrait of Irene Puerta-Araña" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
+					<img src="/irenep.jpg" alt="Portrait of Irene Puerta-Araña" loading="lazy" class="h-full w-full object-contain" onload="this.nextElementSibling.classList.add('hidden')" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden')" />
 					<div class="absolute inset-0 hidden items-center justify-center rounded-full bg-gradient-to-br from-[#1d2f50] to-[#2f3d63] text-2xl font-semibold text-white" aria-hidden="true"><span>I</span></div>
 				</div>
 				<h2 class="text-lg font-semibold text-[#1d2f50]">Irene Puerta-Araña</h2>

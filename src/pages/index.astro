@@ -1,30 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout>
-	<nav
-		class="fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between border-b border-[#d9cfc0] bg-[#f7f4ea]/95 px-6 pl-8 pr-6 text-base text-[#1d2f50] backdrop-blur-md md:px-12"
-		aria-label="Primary navigation"
-	>
-		<a class="text-base font-semibold uppercase tracking-[0.25em]" href="#inicio">CogNeUEDU</a>
-		<ul class="flex flex-wrap items-center gap-4 text-sm uppercase tracking-[0.2em] md:text-base">
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#inicio">Home</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="/team">Team</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#investigacion">Research</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#transferencia">Outreach</a></li>
-			<li><a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#contacto">Contact</a></li>
-			<li>
-				<a
-					class="rounded-full border border-[#d08e29]/50 px-5 py-1.5 text-sm tracking-[0.3em] hover:bg-[#d08e29] hover:text-white"
-					href="#participa"
-				>
-					Join
-				</a>
-			</li>
-		</ul>
-	</nav>
-
+	<Navbar />
 	<main class="flex w-full flex-col gap-10 bg-[#f7f4ea] px-10 pt-32 pb-16 text-[#1d2f50] md:px-24 lg:px-28" id="inicio">
 		<header class="grid gap-x-10 gap-y-4 border-b border-[#d9cfc0] pb-6 text-lg md:grid-cols-[220px_auto]">
 			<div class="flex items-start space-x-4 text-6xl font-medium tracking-[0.2em] md:text-7xl" aria-hidden="true">
@@ -50,10 +30,10 @@ import Layout from "../layouts/Layout.astro";
 			<section class="grid gap-8 lg:grid-cols-2" id="investigacion">
 				<article class="flex flex-col gap-5 rounded-[32px] bg-white/95 p-10 text-lg leading-relaxed text-[#1d2f50] shadow-[0_18px_50px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]" id="equipo">
 					<h1 class="text-4xl font-semibold leading-tight md:text-[2.8rem]">
-						CogNeUEDU Lab.
-						<span class="block text-3xl font-normal text-[#6b728d]">Speech Therapy Division · UNED.</span>
+						CogNeuEdu Research Group 
+						<span class="block text-3xl mb-5 font-normal text-[#6b728d]">Speech Therapy Division · UNED</span>
 					</h1>
-					<p class="text-lg leading-relaxed text-[#4d5672]">
+					<p class="text-xl leading-relaxed text-[#4d5672]">
 						We investigate the relationship among creativity, language, and neuroeducation to co-design early
 						intervention programs for speech and communication disorders. Clinicians, teachers, and experience designers
 						collaborate to craft methodologies that adapt to every learning pace.
@@ -66,10 +46,10 @@ import Layout from "../layouts/Layout.astro";
 					<div class="space-y-3" id="participa">
 						<a
 							id="contacto"
-							class="inline-flex items-center justify-center rounded-full bg-[#d08e29] px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-[0_12px_30px_rgba(208,142,41,0.35)] transition hover:bg-[#1d2f50]"
-							href="mailto:cogneu@uned.es"
+							class="inline-flex items-center justify-center rounded-full bg-[#d08e29] px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-[#1d2f50]"
+							href="/team"
 						>
-							Email the team
+							Team
 						</a>
 						<span class="block text-base text-[#6b728d]">Open calendar for international collaborations.</span>
 					</div>
@@ -110,10 +90,10 @@ import Layout from "../layouts/Layout.astro";
 				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">Branding · ©2019</a>
 			</div>
 			<div class="col-span-full mt-10 grid gap-8 lg:grid-cols-3">
-				<article class="flex flex-col gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-					<div class="flex h-48 items-center justify-center rounded-xl bg-[#f7f4ea] p-6">
+				<article class="flex flex-col gap-4 rounded-[28px] bg-white p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
+					<div class="flex h-48 items-center justify-center rounded-xl bg-white p-6">
 						<img
-							src="/CATEDRA-CONJUNTO.webp"
+							src="/CATEDRA-CONJUNTO.png"
 							alt="International Chair in Cognitive Health"
 							class="max-h-full max-w-full object-contain"
 							loading="lazy"
@@ -130,7 +110,7 @@ import Layout from "../layouts/Layout.astro";
 					</div>
 				</article>
 				<article class="flex flex-col gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-					<div class="flex h-48 items-center justify-center rounded-xl bg-[#f7f4ea] p-6">
+					<div class="flex h-48 items-center justify-center rounded-xl bg-white p-6">
 						<img
 							src="/IMIENS-OK.png"
 							alt="CLAE collaboration"
@@ -148,9 +128,9 @@ import Layout from "../layouts/Layout.astro";
 					</div>
 				</article>
 				<article class="flex flex-col gap-4 rounded-[28px] bg-white/95 p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0]">
-					<div class="flex h-48 items-center justify-center rounded-xl bg-[#f7f4ea] p-6">
+					<div class="flex h-48 items-center justify-center rounded-xl bg-white p-6">
 						<img
-							src="/SCAND.webp"
+							src="/SCAND.png"
 							alt="SCAND Cognition visual"
 							class="max-h-full max-w-full object-contain"
 							loading="lazy"
