@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
@@ -15,17 +16,17 @@ import Navbar from "../components/Navbar.astro";
 			<div class="hidden flex-col gap-2 uppercase tracking-[0.2em] text-[#6b728d] md:flex md:items-end md:text-right md:text-base">
 				<div class="flex flex-wrap items-center gap-2 text-base text-[#1d2f50] md:justify-end">
 					<span class="text-xl">↑</span>
-					Research line · Speech Therapy · UNED · CogNeuroEdu
+					Línea de investigación · Logopedia · UNED · CogNeuroEdu
 				</div>
-				<nav class="flex flex-wrap gap-2 text-sm tracking-[0.28em] text-[#1d2f50] md:justify-end" aria-label="Quick links">
-					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#proyectos">Projects</a>
+				<nav class="flex flex-wrap gap-2 text-sm tracking-[0.28em] text-[#1d2f50] md:justify-end" aria-label="Enlaces rápidos">
+					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#proyectos">Proyectos</a>
 					<span>· Madrid · </span>
-					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#info">About</a>
-					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#contacto">· Write to us</a>
+					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#info">Sobre el grupo</a>
+					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#contacto">· Escríbenos</a>
 				</nav>
 			</div>
 			<p class="text-center text-xs uppercase tracking-[0.2em] text-[#6b728d] md:col-span-2 md:text-left md:text-sm">
-				CogNeuroEdu Research Group · © 
+				Grupo de Investigación CogNeuroEdu · ©
 			</p>
 		</header>
 
@@ -35,21 +36,17 @@ import Navbar from "../components/Navbar.astro";
 				id="info"
 			>
 				<h1 class="text-3xl font-semibold leading-tight sm:text-4xl md:text-[3.4rem] lg:text-[3.9rem] xl:text-[4.4rem]">
-					CogNeuEdu Research 
+					Investigación 
 					<span class="mb-6 mt-7 block text-2xl font-normal text-[#6b728d] sm:text-3xl md:text-[2.4rem] lg:text-[2.8rem] xl:text-[3.1rem]">
-						Speech Therapy Division · UNED
+						División de Educación · UNED
 					</span>
 				</h1>
 				<div class="space-y-6 text-base text-[#4d5672] sm:space-y-8 sm:text-lg md:text-xl lg:text-[1.4rem]">
 					<p class="leading-relaxed">
-						We investigate the relationship among creativity, language, and neuroeducation to co-design early intervention
-						programs for speech and communication disorders. Clinicians, teachers, and experience designers collaborate to
-						craft methodologies that adapt to every learning pace.
+						Investigamos la relación entre la creatividad, el lenguaje y la neuroeducación para co-diseñar programas de intervención temprana en trastornos del habla y de la comunicación. Logopedas, docentes y diseñadoras de experiencias colaboran para crear metodologías que se adaptan a todos los ritmos de aprendizaje.
 					</p>
 					<p class="leading-relaxed">
-						Our work draws on contemporary visual culture, universal accessibility, and the evidence produced by the
-						CogNeUEDU-UNED Chair. The materials we create travel from rural classrooms to reference hospitals across
-						Madrid.
+						Nuestro trabajo se nutre de la cultura visual contemporánea, la accesibilidad universal y la evidencia generada por la Cátedra CogNeUEDU-UNED. Los materiales que desarrollamos viajan desde aulas rurales hasta hospitales de referencia en Madrid.
 					</p>
 				</div>
 				<div class="space-y-4 scroll-mt-28 md:scroll-mt-36 md:space-y-5" id="participa">
@@ -57,63 +54,60 @@ import Navbar from "../components/Navbar.astro";
 						class="inline-flex w-full items-center justify-center rounded-full bg-[#d08e29] px-6 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-white transition hover:bg-[#1d2f50] sm:w-auto sm:px-8 sm:text-sm"
 						href="/team"
 					>
-						Team
+						Equipo
 					</a>
-					<span class="block text-sm text-[#6b728d] sm:text-base">Open calendar for international collaborations.</span>
+					<span class="block text-sm text-[#6b728d] sm:text-base">Calendario abierto para colaboraciones internacionales.</span>
 				</div>
 			</article>
 
 			<figure class="flex flex-col justify-center rounded-[32px] bg-white p-5 shadow-[0_18px_50px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 lg:p-8 scroll-mt-28 md:scroll-mt-32" id="proyectos">
 				<img
 					src="/6210.jpg"
-					alt="Green notebook opened with the word Bibliography"
+					alt="Cuaderno verde abierto con la palabra Bibliografía"
 					loading="lazy"
 					class="h-full w-full rounded-2xl object-cover saturate-[0.85] ring-1 ring-[#d9cfc0]"
 				/>
 				<figcaption class="mt-4 text-sm text-[#6b728d] sm:text-base sm:text-right">
-					Abstract representation of neural network.
+					Representación abstracta de una red neuronal.
 				</figcaption>
 			</figure>
 		</section>
 
 		<section class="grid gap-8 border-y border-[#d9cfc0] py-10 text-base text-[#1d2f50] scroll-mt-28 md:grid-cols-[minmax(0,1fr)_auto_auto] md:text-lg" id="transferencia">
 			<div>
-				<h2 class="mb-4 text-xs uppercase tracking-[0.3em] text-[#6b728d] sm:text-sm">Active areas</h2>
+				<h2 class="mb-4 text-xs uppercase tracking-[0.3em] text-[#6b728d] sm:text-sm">Áreas activas</h2>
 				<ul class="space-y-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#1d2f50] sm:text-base">
-					<li class="flex gap-3"><span class="text-[#d08e29]">06</span>Creative neuroeducation</li>
-					<li class="flex gap-3"><span class="text-[#d08e29]">03</span>Social-first · Family communities</li>
-					<li class="flex gap-3"><span class="text-[#d08e29]">04</span>Health brand identity</li>
-					<li class="flex gap-3"><span class="text-[#d08e29]">04</span>Full-stack tools for clinics</li>
-					<li class="flex gap-3"><span class="text-[#d08e29]">14</span>Observatory of every project</li>
+					<li class="flex gap-3"><span class="text-[#d08e29]">06</span>Neuroeducación creativa</li>
+					<li class="flex gap-3"><span class="text-[#d08e29]">03</span>Comunidades familiares con enfoque social</li>
+					<li class="flex gap-3"><span class="text-[#d08e29]">04</span>Identidad de marca en salud</li>
+					<li class="flex gap-3"><span class="text-[#d08e29]">04</span>Herramientas integrales para clínicas</li>
+					<li class="flex gap-3"><span class="text-[#d08e29]">14</span>Observatorio de cada proyecto</li>
 				</ul>
 			</div>
 			<div class="flex flex-col gap-3 text-xs uppercase tracking-[0.2em] text-[#6b728d] sm:text-sm md:text-base">
-				<span>↓ Documentation</span>
+				<span>↓ Documentación</span>
 				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">
-					Cognition and Neuroeducation
+					Cognición y Neuroeducación
 				</a>
 			</div>
 			<div class="flex flex-col gap-3 text-xs uppercase tracking-[0.2em] text-[#6b728d] sm:text-sm md:text-base">
-				<span>↓ Latest project</span>
-				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">Cognition · ©2025</a>
+				<span>↓ Último proyecto</span>
+				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">Cognición · ©2025</a>
 			</div>
 			<div class="col-span-full mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 				<article class="flex flex-col gap-4 rounded-[28px] bg-white p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:text-base">
 					<div class="flex h-40 items-center justify-center rounded-xl bg-white p-6 sm:h-48">
 						<img
 							src="/CATEDRA-CONJUNTO.png"
-							alt="International Chair in Cognitive Health"
+							alt="Logotipo de la Cátedra Internacional en Salud Cognitiva"
 							class="max-h-full max-w-full object-contain"
 							loading="lazy"
 						/>
 					</div>
 					<div>
-						<h3 class="text-2xl font-semibold text-[#1d2f50]">International Chair in Cognitive Health</h3>
+						<h3 class="text-2xl font-semibold text-[#1d2f50]">Cátedra Internacional en Salud Cognitiva</h3>
 						<p class="text-base leading-relaxed text-[#4d5672]">
-							The UNED CogNeuroEdu Research Group belongs to this research network on Cognitive Health, which aims to
-							create, manage, and transfer scientific knowledge on cognitive health to enhance quality of life and
-							foster healthy cognitive profiles. The Chair is sponsored by the Fundación Antonio de Nebrija and
-							CogniFit Inc. and comprises a diverse number of international research groups.
+							El Grupo de Investigación CogNeuroEdu de la UNED forma parte de esta red sobre salud cognitiva, que busca crear, gestionar y transferir conocimiento científico para mejorar la calidad de vida y promover perfiles cognitivos saludables. La Cátedra, patrocinada por la Fundación Antonio de Nebrija y CogniFit Inc., reúne a numerosos grupos internacionales de investigación.
 						</p>
 					</div>
 				</article>
@@ -121,7 +115,7 @@ import Navbar from "../components/Navbar.astro";
 					<div class="flex h-40 items-center justify-center rounded-xl bg-white p-6 sm:h-48">
 						<img
 							src="/IMIENS-OK.png"
-							alt="CLAE collaboration"
+							alt="Colaboración con el IMIENS"
 							class="max-h-full max-w-full object-contain"
 							loading="lazy"
 						/>
@@ -129,9 +123,7 @@ import Navbar from "../components/Navbar.astro";
 					<div>
 						<h3 class="text-2xl font-semibold text-[#1d2f50]">Instituto Mixto de Investigación</h3>
 						<p class="text-base leading-relaxed text-[#4d5672]">
-							EL IMIENS quiere cubrir la demanda de formación permanente de los profesionales del sector de la sanidad,
-							potenciar la investigación y la colaboración entre grupos en temas relacionados con la salud y servir de 
-							apoyo a todas las instituciones que trabajan en este campo.
+							El IMIENS cubre la demanda de formación permanente de las y los profesionales sanitarios, impulsa la investigación y la colaboración entre grupos en temas de salud y da apoyo a las instituciones que trabajan en este ámbito.
 						</p>
 					</div>
 				</article>
@@ -139,7 +131,7 @@ import Navbar from "../components/Navbar.astro";
 					<div class="flex h-40 items-center justify-center rounded-xl bg-white p-6 sm:h-48">
 						<img
 							src="/SCAND.png"
-							alt="SCAND Cognition visual"
+							alt="Identidad visual de SCAND Cognition"
 							class="max-h-full max-w-full object-contain"
 							loading="lazy"
 						/>
@@ -147,9 +139,7 @@ import Navbar from "../components/Navbar.astro";
 					<div>
 						<h3 class="text-2xl font-semibold text-[#1d2f50]">SCAND Cognition</h3>
 						<p class="text-base leading-relaxed text-[#4d5672]">
-							The Spanish Consortium for Ageing Normative Data (SCAND) shares data on the Spanish middle-aged and
-							older adult population to establish normative data for common cognitive tests and to study their
-							longitudinal predictive value regarding SCD, MCI, or conversion to dementia.
+							El Consorcio Español de Datos Normativos sobre Envejecimiento (SCAND) comparte información sobre la población adulta española de mediana y avanzada edad para establecer datos normativos en pruebas cognitivas y estudiar su valor predictivo longitudinal en relación con el DCS, el DCL o la demencia.
 						</p>
 					</div>
 				</article>
@@ -157,57 +147,5 @@ import Navbar from "../components/Navbar.astro";
 		</section>
 	</main>
 
-	<footer class="mt-16 bg-[#050505] px-5 py-14 text-base text-slate-200 sm:px-10 md:px-16 md:text-lg">
-		<div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-			<div class="space-y-4">
-				<div class="inline-flex rounded border border-white bg-black p-4">
-					<img
-						src="/uned.png"
-						alt="UNED Faculty of Education"
-						class="h-16 w-auto object-contain"
-						loading="lazy"
-					/>
-				</div>
-				<address class="not-italic text-base leading-7 text-slate-300">
-					Faculty of Education<br />
-					Universidad Nacional de Educación a Distancia (UNED)<br />
-					C/ Juan del Rosal 14 · 28040 Madrid · Spain
-				</address>
-			</div>
-			<div>
-				<h3 class="mb-3 text-sm uppercase tracking-[0.3em] text-white">Legal</h3>
-				<ul class="space-y-2 text-base text-slate-300">
-					<li>
-						<a class="hover:text-white" href="/terminos-legales-y-condiciones">Legal terms & conditions</a>
-					</li>
-					<li><a class="hover:text-white" href="/politica-privacidad">Privacy policy</a></li>
-					<li>
-						<a class="hover:text-white" href="/terminos-legales-y-condiciones#rgpd">RGPD</a>
-					</li>
-				</ul>
-			</div>
-			<div class="scroll-mt-28 md:scroll-mt-36" id="contacto">
-				<h3 class="mb-3 text-sm uppercase tracking-[0.3em] text-white">Contact</h3>
-				<ul class="space-y-2 text-base text-slate-300">
-					<li>
-						<a class="hover:text-white" href="mailto:mt.m.aragoneses@edu.uned.es">✉ mt.m.aragoneses@edu.uned.es</a>
-					</li>
-					<li>
-						<a class="hover:text-white" href="mailto:cogneuroedu@edu.uned.es">✉ cogneuroedu@edu.uned.es</a>
-					</li>
-					<li><a class="hover:text-white" href="tel:+34913987384">☎ +34 91 398 73 84</a></li>
-				</ul>
-			</div>
-			<div>
-				<h3 class="mb-3 text-sm uppercase tracking-[0.3em] text-white">CogNeuroEdu</h3>
-				<p class="text-base leading-7 text-slate-300">
-					Competitive and consolidated UNED research group.<br />
-					Reference 525 · CogNeUEDU Chair
-				</p>
-			</div>
-		</div>
-		<div class="mt-8 border-t border-white/10 pt-4 text-center text-sm uppercase tracking-[0.3em] text-slate-400">
-			Copyright 2024 — CogNeuroEdu.
-		</div>
-	</footer>
+	<Footer />
 </Layout>
