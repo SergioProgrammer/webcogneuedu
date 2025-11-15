@@ -7,17 +7,17 @@ import Navbar from "../components/Navbar.astro";
 	<Navbar />
 	<main class="flex w-full flex-col gap-10 bg-[#f7f4ea] px-5 pt-28 pb-16 text-[#1d2f50] scroll-mt-28 sm:px-8 md:px-20 md:pt-32 lg:px-28 lg:scroll-mt-36" id="inicio">
 		<header class="grid gap-x-8 gap-y-4 border-b border-[#d9cfc0] pb-6 text-base text-[#1d2f50] md:grid-cols-[220px_auto] md:text-lg">
-			<div class="flex items-start space-x-3 text-4xl font-medium tracking-[0.15em] sm:text-5xl md:text-6xl lg:text-7xl" aria-hidden="true">
+			<div class="hidden items-start space-x-3 text-4xl font-medium tracking-[0.15em] sm:text-5xl md:flex md:text-6xl lg:text-7xl" aria-hidden="true">
 				<span>C</span>
 				<span>N</span>
 				<span>E</span>
 			</div>
-			<div class="flex flex-col gap-2 text-xs uppercase tracking-[0.2em] text-[#6b728d] sm:text-sm md:text-base">
-				<div class="flex flex-wrap items-center gap-2 text-base text-[#1d2f50] sm:text-lg">
-					<span class="text-lg sm:text-xl">↑</span>
+			<div class="hidden flex-col gap-2 uppercase tracking-[0.2em] text-[#6b728d] md:flex md:items-end md:text-right md:text-base">
+				<div class="flex flex-wrap items-center gap-2 text-base text-[#1d2f50] md:justify-end">
+					<span class="text-xl">↑</span>
 					Research line · Speech Therapy · UNED · CogNeuroEdu
 				</div>
-				<nav class="flex flex-wrap gap-2 text-[11px] tracking-[0.28em] text-[#1d2f50] sm:text-xs md:text-sm" aria-label="Quick links">
+				<nav class="flex flex-wrap gap-2 text-sm tracking-[0.28em] text-[#1d2f50] md:justify-end" aria-label="Quick links">
 					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#proyectos">Projects</a>
 					<span>· Madrid · </span>
 					<a class="border-b border-transparent pb-1 hover:border-[#d08e29]" href="#info">About</a>
@@ -25,36 +25,43 @@ import Navbar from "../components/Navbar.astro";
 				</nav>
 			</div>
 			<p class="text-center text-xs uppercase tracking-[0.2em] text-[#6b728d] md:col-span-2 md:text-left md:text-sm">
-				Educational creativity · ©2024
+				CogNeuroEdu Research Group · © 
 			</p>
 		</header>
 
-			<section class="grid gap-8 scroll-mt-28 md:scroll-mt-32 lg:grid-cols-2" id="investigacion">
-				<article class="flex flex-col gap-5 rounded-[32px] bg-white/95 p-6 text-base leading-relaxed text-[#1d2f50] shadow-[0_18px_50px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-8 lg:p-10" id="info">
-					<h1 class="text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.8rem]">
-						CogNeuEdu Research Group 
-						<span class="mb-5 block text-2xl font-normal text-[#6b728d] sm:text-3xl">Speech Therapy Division · UNED</span>
-					</h1>
-					<p class="text-base leading-relaxed text-[#4d5672] sm:text-lg">
-						We investigate the relationship among creativity, language, and neuroeducation to co-design early
-						intervention programs for speech and communication disorders. Clinicians, teachers, and experience designers
-						collaborate to craft methodologies that adapt to every learning pace.
+		<section class="grid gap-8 scroll-mt-28 md:scroll-mt-32 lg:grid-cols-2" id="investigacion">
+			<article
+				class="flex flex-col gap-8 rounded-[32px] bg-white/95 p-6 text-base leading-relaxed text-[#1d2f50] shadow-[0_18px_50px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-8 md:gap-10 lg:p-12"
+				id="info"
+			>
+				<h1 class="text-3xl font-semibold leading-tight sm:text-4xl md:text-[3.4rem] lg:text-[3.9rem] xl:text-[4.4rem]">
+					CogNeuEdu Research 
+					<span class="mb-6 mt-7 block text-2xl font-normal text-[#6b728d] sm:text-3xl md:text-[2.4rem] lg:text-[2.8rem] xl:text-[3.1rem]">
+						Speech Therapy Division · UNED
+					</span>
+				</h1>
+				<div class="space-y-6 text-base text-[#4d5672] sm:space-y-8 sm:text-lg md:text-xl lg:text-[1.4rem]">
+					<p class="leading-relaxed">
+						We investigate the relationship among creativity, language, and neuroeducation to co-design early intervention
+						programs for speech and communication disorders. Clinicians, teachers, and experience designers collaborate to
+						craft methodologies that adapt to every learning pace.
 					</p>
-					<p class="text-base leading-relaxed text-[#4d5672] sm:text-lg">
+					<p class="leading-relaxed">
 						Our work draws on contemporary visual culture, universal accessibility, and the evidence produced by the
 						CogNeUEDU-UNED Chair. The materials we create travel from rural classrooms to reference hospitals across
 						Madrid.
 					</p>
-					<div class="space-y-3 scroll-mt-28 md:scroll-mt-36" id="participa">
-						<a
-							class="inline-flex w-full items-center justify-center rounded-full bg-[#d08e29] px-6 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-white transition hover:bg-[#1d2f50] sm:w-auto sm:px-8 sm:text-sm"
-							href="/team"
-						>
-							Team
-						</a>
-						<span class="block text-sm text-[#6b728d] sm:text-base">Open calendar for international collaborations.</span>
-					</div>
-				</article>
+				</div>
+				<div class="space-y-4 scroll-mt-28 md:scroll-mt-36 md:space-y-5" id="participa">
+					<a
+						class="inline-flex w-full items-center justify-center rounded-full bg-[#d08e29] px-6 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-white transition hover:bg-[#1d2f50] sm:w-auto sm:px-8 sm:text-sm"
+						href="/team"
+					>
+						Team
+					</a>
+					<span class="block text-sm text-[#6b728d] sm:text-base">Open calendar for international collaborations.</span>
+				</div>
+			</article>
 
 			<figure class="flex flex-col justify-center rounded-[32px] bg-white p-5 shadow-[0_18px_50px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:p-6 lg:p-8 scroll-mt-28 md:scroll-mt-32" id="proyectos">
 				<img
@@ -83,12 +90,12 @@ import Navbar from "../components/Navbar.astro";
 			<div class="flex flex-col gap-3 text-xs uppercase tracking-[0.2em] text-[#6b728d] sm:text-sm md:text-base">
 				<span>↓ Documentation</span>
 				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">
-					Typesetting: Feminist Code
+					Cognition and Neuroeducation
 				</a>
 			</div>
 			<div class="flex flex-col gap-3 text-xs uppercase tracking-[0.2em] text-[#6b728d] sm:text-sm md:text-base">
 				<span>↓ Latest project</span>
-				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">Branding · ©2019</a>
+				<a class="border-b border-transparent pb-1 text-[#1d2f50] hover:border-[#d08e29]" href="#">Cognition · ©2025</a>
 			</div>
 			<div class="col-span-full mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 				<article class="flex flex-col gap-4 rounded-[28px] bg-white p-6 text-sm text-[#1d2f50] shadow-[0_15px_40px_rgba(15,15,15,0.08)] ring-1 ring-[#d9cfc0] sm:text-base">
