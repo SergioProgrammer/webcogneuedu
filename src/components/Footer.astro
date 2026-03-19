@@ -1,51 +1,57 @@
 ---
+import { collaborators, contactChannels } from "../data/site";
 ---
 
-<footer class="mt-16 bg-[#050505] px-5 py-14 text-base text-slate-200 sm:px-10 md:px-16 md:text-lg">
-	<div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-		<div class="space-y-4">
-			<div class="inline-flex rounded border border-white bg-black p-4">
-				<img src="/uned.png" alt="Facultad de Educación de la UNED" class="h-16 w-auto object-contain" loading="lazy" />
-			</div>
-			<address class="not-italic text-base leading-7 text-slate-300">
-				Facultad de Educación<br />
-				Universidad Nacional de Educación a Distancia (UNED)<br />
-				C/ Juan del Rosal 14 · 28040 Madrid · España
-			</address>
-		</div>
-		<div>
-			<h3 class="mb-3 text-sm uppercase tracking-[0.3em] text-white">Legal</h3>
-			<ul class="space-y-2 text-base text-slate-300">
-				<li>
-					<a class="hover:text-white" href="/terminos-legales-y-condiciones">Términos legales y condiciones</a>
-				</li>
-				<li><a class="hover:text-white" href="/politica-privacidad">Política de privacidad</a></li>
-				<li>
-					<a class="hover:text-white" href="/terminos-legales-y-condiciones#rgpd">RGPD</a>
-				</li>
-			</ul>
-		</div>
-		<div class="scroll-mt-28 md:scroll-mt-36" id="contacto">
-			<h3 class="mb-3 text-sm uppercase tracking-[0.3em] text-white">Contacto</h3>
-			<ul class="space-y-2 text-base text-slate-300">
-				<li>
-					<a class="hover:text-white" href="mailto:mt.m.aragoneses@edu.uned.es">✉ mt.m.aragoneses@edu.uned.es</a>
-				</li>
-				<li>
-					<a class="hover:text-white" href="mailto:cogneuroedu@edu.uned.es">✉ cogneuroedu@edu.uned.es</a>
-				</li>
-				<li><a class="hover:text-white" href="tel:+34913987384">☎ +34 91 398 73 84</a></li>
-			</ul>
-		</div>
-		<div>
-			<h3 class="mb-3 text-sm uppercase tracking-[0.3em] text-white">CogNeuroEdu</h3>
-			<p class="text-base leading-7 text-slate-300">
-				Grupo de investigación competitivo y consolidado de la UNED.<br />
-				Referencia 525 · Cátedra CogNeUEDU
+<footer class="section-shell mt-10 border-t border-[rgba(217,207,192,0.85)] bg-[linear-gradient(180deg,rgba(232,234,223,0.55),rgba(247,244,234,0.96))]">
+	<div class="page-frame grid gap-12 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
+		<div class="space-y-6">
+			<p class="eyebrow">CogNeuroEdu · UNED</p>
+			<h2 class="max-w-xl text-3xl font-semibold leading-tight md:text-4xl">
+				Investigación rigurosa, transferencia aplicada y una comunicación científica más clara.
+			</h2>
+			<p class="max-w-2xl text-base leading-7 text-[#5f6b85] md:text-lg md:leading-8">
+				Grupo de investigación competitivo y consolidado de la Facultad de Educación. Diseñamos conocimiento útil para
+				la práctica educativa y sociosanitaria sin perder profundidad académica.
 			</p>
+			<div class="flex items-center gap-4 rounded-[1.5rem] border border-[rgba(217,207,192,0.9)] bg-white/70 p-4 shadow-[0_18px_40px_rgba(29,47,80,0.06)]">
+				<img src="/uned.png" alt="Facultad de Educación de la UNED" class="h-16 w-auto object-contain md:h-20" loading="lazy" />
+				<address class="not-italic text-sm leading-6 text-[#5f6b85] md:text-base">
+					Facultad de Educación<br />
+					Universidad Nacional de Educación a Distancia<br />
+					C/ Juan del Rosal 14 · 28040 Madrid · España
+				</address>
+			</div>
+		</div>
+
+		<div class="space-y-5">
+			<h3 class="text-xs font-semibold uppercase tracking-[0.3em] text-[#d08e29]">Contacto</h3>
+			<ul class="space-y-4">
+				{contactChannels.map((channel) => (
+					<li class="border-b border-[rgba(217,207,192,0.75)] pb-4">
+						<p class="mb-1 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-[#5f6b85]">{channel.label}</p>
+						<a class="text-base leading-7 text-[#1d2f50] hover:text-[#d08e29]" href={channel.href} target={channel.href.startsWith("http") ? "_blank" : undefined} rel={channel.href.startsWith("http") ? "noreferrer" : undefined}>
+							{channel.value}
+						</a>
+					</li>
+				))}
+			</ul>
+		</div>
+
+		<div class="space-y-5">
+			<h3 class="text-xs font-semibold uppercase tracking-[0.3em] text-[#d08e29]">Instituciones</h3>
+			<ul class="space-y-3 text-base leading-7 text-[#1d2f50]">
+				{collaborators.map((item) => (
+					<li class="border-b border-[rgba(217,207,192,0.75)] pb-3">{item.name}</li>
+				))}
+			</ul>
+			<div class="pt-4 text-sm uppercase tracking-[0.2em] text-[#5f6b85]">
+				<a class="mr-4 hover:text-[#d08e29]" href="/terminos-legales-y-condiciones">Términos</a>
+				<a class="mr-4 hover:text-[#d08e29]" href="/politica-privacidad">Privacidad</a>
+				<a class="hover:text-[#d08e29]" href="/terminos-legales-y-condiciones#rgpd">RGPD</a>
+			</div>
 		</div>
 	</div>
-	<div class="mt-8 border-t border-white/10 pt-4 text-center text-sm uppercase tracking-[0.3em] text-slate-400">
-		Derechos reservados 2024 — CogNeuroEdu.
+	<div class="page-frame mt-10 border-t border-[rgba(217,207,192,0.8)] pt-5 text-[0.72rem] uppercase tracking-[0.25em] text-[#5f6b85]">
+		CogNeuroEdu · Referencia 525 · © 2026
 	</div>
 </footer>

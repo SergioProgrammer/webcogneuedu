@@ -1,96 +1,110 @@
 ---
+const navItems = [
+	{ href: "/", label: "Inicio" },
+	{ href: "/investigacion", label: "Investigación" },
+	{ href: "/publicaciones", label: "Publicaciones" },
+	{ href: "/proyectos", label: "Proyectos" },
+	{ href: "/team", label: "Equipo" },
+	{ href: "/contacto", label: "Contacto" },
+];
 ---
 
-<nav class="fixed inset-x-0 top-0 z-50 border-b border-[#d9cfc0] bg-[#f7f4ea]/95 backdrop-blur-md" aria-label="Navegación principal">
-	<div class="mx-auto flex w-full flex-col gap-4 px-4 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#1d2f50] sm:px-5 sm:text-sm md:flex-row md:items-center md:justify-between md:px-8 lg:px-10">
-		<div class="flex items-center justify-between gap-3">
-			<a href="/" class="flex items-center gap-3">
-				<span class="sr-only">Volver al inicio</span>
-				<img src="/imago.svg" alt="Logotipo de CogNeuroEdu" class="h-16 w-auto" />
-			</a>
-			<button
-				type="button"
-				data-nav-toggle
-				class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#d9cfc0]/70 text-[#1d2f50] transition hover:border-[#1d2f50] hover:bg-white md:hidden"
-				aria-expanded="false"
-				aria-controls="primary-navigation"
-				aria-label="Abrir menú"
-				data-open-label="Abrir menú"
-				data-close-label="Cerrar menú"
-			>
-				<span class="sr-only">Abrir menú</span>
-				<svg data-icon="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8">
-					<path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
-				</svg>
-				<svg data-icon="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8">
-					<path d="M6 6l12 12M6 18L18 6" stroke-linecap="round" />
-				</svg>
-			</button>
-		</div>
-		<ul
-			id="primary-navigation"
-			class="hidden flex-col gap-3 border-t border-[#d9cfc0]/70 pt-4 text-[11px] tracking-[0.28em] md:flex md:flex-row md:items-center md:gap-6 md:border-none md:pt-0 md:text-sm md:tracking-[0.2em]"
+<nav
+	class="fixed inset-x-0 top-0 z-50 border-b border-transparent bg-[rgba(247,244,234,0.7)] backdrop-blur-md transition-all duration-300"
+	aria-label="Navegación principal"
+	data-site-nav
+>
+	<div class="page-frame flex min-h-[var(--nav-height)] items-center justify-between gap-6 py-4">
+		<a href="/" class="flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-[#1d2f50] md:text-xs">
+			<img src="/imago.svg" alt="Logotipo de CogNeuroEdu" class="h-12 w-auto md:h-14" />
+			
+		</a>
+
+		<button
+			type="button"
+			data-nav-toggle
+			class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[rgba(29,47,80,0.14)] bg-white/70 text-[#1d2f50] md:hidden"
+			aria-expanded="false"
+			aria-controls="primary-navigation"
+			aria-label="Abrir menú"
+			data-open-label="Abrir menú"
+			data-close-label="Cerrar menú"
 		>
-			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="/">Inicio</a></li>
-			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="/team">Equipo</a></li>
-			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="/#investigacion">Investigación</a></li>
-			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="/#transferencia">Transferencia</a></li>
-			<li><a class="block border-b border-transparent pb-1 hover:border-[#d08e29]" href="/#contacto">Contacto</a></li>
-			<li>
-				<a
-					class="inline-flex w-full items-center justify-center rounded-full border border-[#d08e29]/50 px-5 py-2 text-[11px] tracking-[0.35em] hover:bg-[#d08e29] hover:text-white md:w-auto"
-					href="/#participa"
-				>
-					Súmate
-				</a>
-			</li>
-		</ul>
+			<svg data-icon="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8">
+				<path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+			</svg>
+			<svg data-icon="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8">
+				<path d="M6 6l12 12M6 18L18 6" stroke-linecap="round" />
+			</svg>
+		</button>
+
+		<div
+			id="primary-navigation"
+			class="absolute left-[var(--page-padding)] right-[var(--page-padding)] top-[calc(var(--nav-height)-0.35rem)] hidden rounded-[1.75rem] border border-[rgba(217,207,192,0.95)] bg-[rgba(255,253,250,0.98)] p-6 shadow-[0_24px_60px_rgba(29,47,80,0.12)] md:static md:flex md:w-auto md:items-center md:gap-8 md:border-none md:bg-transparent md:p-0 md:shadow-none"
+			style="top: calc(var(--nav-height) - 0.35rem);"
+		>
+			<ul class="flex flex-col gap-4 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#1d2f50] md:flex-row md:items-center md:gap-6 md:text-[0.7rem] lg:text-xs">
+				{navItems.map((item) => (
+					<li>
+						<a class="block border-b border-transparent pb-1 hover:border-[#d08e29] hover:text-[#d08e29]" href={item.href}>
+							{item.label}
+						</a>
+					</li>
+				))}
+			</ul>
+			<a class="cta-secondary mt-6 w-full md:mt-0 md:ml-6 md:w-auto" href="/contacto">Colaborar</a>
+		</div>
 	</div>
 </nav>
 
 <script>
 	const setupNavigation = () => {
-		const toggle = document.querySelector('[data-nav-toggle]');
-		const menu = document.getElementById('primary-navigation');
+		const nav = document.querySelector("[data-site-nav]");
+		const toggle = document.querySelector("[data-nav-toggle]");
+		const menu = document.getElementById("primary-navigation");
+		if (!nav || !menu) return;
+
 		const openIcon = toggle?.querySelector('[data-icon="open"]');
 		const closeIcon = toggle?.querySelector('[data-icon="close"]');
-		const mq = window.matchMedia('(min-width: 768px)');
-		const openLabel = toggle?.getAttribute('data-open-label');
-		const closeLabel = toggle?.getAttribute('data-close-label');
+		const mq = window.matchMedia("(min-width: 768px)");
+		const openLabel = toggle?.getAttribute("data-open-label");
+		const closeLabel = toggle?.getAttribute("data-close-label");
 
-		const updateIcons = (isOpen: boolean) => {
-			openIcon?.classList.toggle('hidden', isOpen);
-			closeIcon?.classList.toggle('hidden', !isOpen);
+		const syncScrolled = () => {
+			nav?.classList.toggle("border-[rgba(217,207,192,0.8)]", window.scrollY > 16);
+			nav?.classList.toggle("bg-[rgba(247,244,234,0.94)]", window.scrollY > 16);
+			nav?.classList.toggle("shadow-[0_12px_40px_rgba(29,47,80,0.07)]", window.scrollY > 16);
 		};
 
-		const updateAriaLabel = (isOpen: boolean) => {
+		const updateIcons = (isOpen) => {
+			openIcon?.classList.toggle("hidden", isOpen);
+			closeIcon?.classList.toggle("hidden", !isOpen);
+		};
+
+		const updateAriaLabel = (isOpen) => {
 			if (toggle && openLabel && closeLabel) {
-				toggle.setAttribute('aria-label', isOpen ? closeLabel : openLabel);
+				toggle.setAttribute("aria-label", isOpen ? closeLabel : openLabel);
 			}
 		};
 
 		const closeMenu = () => {
-			toggle?.setAttribute('aria-expanded', 'false');
-			menu?.classList.add('hidden');
+			toggle?.setAttribute("aria-expanded", "false");
+			menu.classList.add("hidden");
 			updateIcons(false);
 			updateAriaLabel(false);
 		};
 
-		toggle?.addEventListener('click', () => {
-			const expanded = toggle.getAttribute('aria-expanded') === 'true';
+		toggle?.addEventListener("click", () => {
+			const expanded = toggle.getAttribute("aria-expanded") === "true";
 			const nextState = !expanded;
-			toggle.setAttribute('aria-expanded', String(nextState));
-			if (nextState) {
-				menu?.classList.remove('hidden');
-			} else {
-				menu?.classList.add('hidden');
-			}
+			toggle.setAttribute("aria-expanded", String(nextState));
+			menu.classList.toggle("hidden", !nextState);
 			updateIcons(nextState);
 			updateAriaLabel(nextState);
 		});
 
-		menu?.querySelectorAll('a').forEach((link) => {
-			link.addEventListener('click', () => {
+		menu.querySelectorAll("a").forEach((link) => {
+			link.addEventListener("click", () => {
 				if (!mq.matches) {
 					closeMenu();
 				}
@@ -99,22 +113,24 @@
 
 		const syncMenuState = () => {
 			if (mq.matches) {
-				menu?.classList.remove('hidden');
-				toggle?.setAttribute('aria-expanded', 'false');
+				menu.classList.remove("hidden");
+				toggle?.setAttribute("aria-expanded", "false");
 				updateIcons(false);
 				updateAriaLabel(false);
-			} else if (toggle?.getAttribute('aria-expanded') === 'false') {
-				menu?.classList.add('hidden');
+			} else if (toggle?.getAttribute("aria-expanded") !== "true") {
+				menu.classList.add("hidden");
 			}
 		};
 
-		mq.addEventListener('change', syncMenuState);
+		window.addEventListener("scroll", syncScrolled, { passive: true });
+		mq.addEventListener("change", syncMenuState);
 		syncMenuState();
+		syncScrolled();
 	};
 
-	if (typeof window !== 'undefined') {
-		if (document.readyState === 'loading') {
-			document.addEventListener('DOMContentLoaded', setupNavigation, { once: true });
+	if (typeof window !== "undefined") {
+		if (document.readyState === "loading") {
+			document.addEventListener("DOMContentLoaded", setupNavigation, { once: true });
 		} else {
 			setupNavigation();
 		}

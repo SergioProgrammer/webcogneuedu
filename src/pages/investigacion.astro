@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { researchLines } from "../data/site";
+---
+
+<Layout title="Investigación | CogNeuroEdu" description="Líneas de investigación, enfoque metodológico y áreas de transferencia de CogNeuroEdu.">
+	<Navbar />
+	<main class="px-5 pb-16 pt-32 md:px-8 md:pb-24 md:pt-40">
+		<section class="page-frame grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+			<div class="reveal space-y-6">
+				<p class="eyebrow kicker-rule">Investigación</p>
+				<h1 class="text-5xl font-semibold leading-[0.93] tracking-[-0.05em] sm:text-6xl md:text-7xl">
+					Marco científico orientado a evidencia, accesibilidad e impacto aplicado.
+				</h1>
+			</div>
+			<div class="reveal editorial-panel p-6 md:p-8" style="--reveal-delay: 120ms;">
+				<p class="text-lg leading-8 text-[#5f6b85]">
+					La investigación del grupo se organiza para facilitar lectura, comprensión y transferencia. Reunimos trabajo en
+					neuroeducación, lenguaje, cognición y salud cognitiva con una metodología que combina rigor académico y
+					aplicabilidad real.
+				</p>
+			</div>
+		</section>
+
+		<section class="page-frame section-shell">
+			<div class="grid gap-5">
+				{researchLines.map((line, index) => (
+					<article class="reveal editorial-panel p-7 md:p-10" style={`--reveal-delay: ${index * 100}ms;`}>
+						<div class="grid gap-6 lg:grid-cols-[140px_minmax(0,1fr)]">
+							<div class="text-sm font-semibold uppercase tracking-[0.28em] text-[#d08e29]">
+								Línea 0{index + 1}
+							</div>
+							<div>
+								<h2 class="text-3xl font-semibold leading-tight tracking-[-0.04em] md:text-4xl">{line.title}</h2>
+								<p class="mt-4 max-w-4xl text-base leading-7 text-[#5f6b85] md:text-lg md:leading-8">{line.description}</p>
+								<div class="mt-6 grid gap-3 md:grid-cols-3">
+									{line.points.map((point) => (
+										<div class="rounded-[1.25rem] border border-[rgba(217,207,192,0.9)] bg-white/70 px-5 py-4 text-sm uppercase tracking-[0.16em] text-[#1d2f50]">
+											{point}
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+					</article>
+				))}
+			</div>
+		</section>
+
+		<section class="page-frame section-shell section-divider">
+			<div class="grid gap-6 lg:grid-cols-3">
+				<div class="reveal editorial-card p-6 md:p-8">
+					<h2 class="mb-4 text-2xl font-semibold tracking-[-0.03em]">Cómo trabajamos</h2>
+					<p class="text-base leading-7 text-[#5f6b85]">
+						Combinamos revisión de evidencia, trabajo interdisciplinar, diseño de materiales y validación en contextos
+						educativos y clínicos.
+					</p>
+				</div>
+				<div class="reveal editorial-card p-6 md:p-8" style="--reveal-delay: 100ms;">
+					<h2 class="mb-4 text-2xl font-semibold tracking-[-0.03em]">Qué priorizamos</h2>
+					<p class="text-base leading-7 text-[#5f6b85]">
+						Claridad metodológica, accesibilidad, medición de impacto, colaboración institucional y una comunicación
+						científica que facilite adopción.
+					</p>
+				</div>
+				<div class="reveal editorial-card p-6 md:p-8" style="--reveal-delay: 180ms;">
+					<h2 class="mb-4 text-2xl font-semibold tracking-[-0.03em]">Dónde aplicamos</h2>
+					<p class="text-base leading-7 text-[#5f6b85]">
+						Escuelas, facultades, redes de investigación, entornos sociosanitarios y proyectos de transferencia con impacto
+						territorial e internacional.
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

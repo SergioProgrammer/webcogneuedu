@@ -4,16 +4,211 @@
 
 @layer base {
 	:root {
-		font-family: "Helvetica Neue", "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-		background-color: #f7f7f7;
-		color: #0f0f0f;
+		--page-padding: clamp(1.25rem, 3vw, 3rem);
+		--nav-height: 88px;
+		--color-page: #fbfaf6;
+		--color-surface: #fffdfa;
+		--color-surface-strong: #ffffff;
+		--color-ink: #1d2f50;
+		--color-muted: #5f6b85;
+		--color-line: #d9cfc0;
+		--color-accent: #d08e29;
+		--color-accent-soft: #efe2c8;
+		--color-panel: #e8eadf;
+		--shadow-editorial: 0 24px 80px rgba(29, 47, 80, 0.08);
+		font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+		background-color: var(--color-page);
+		color: var(--color-ink);
+		scroll-behavior: smooth;
+	}
+
+	html {
+		background: var(--color-page);
 	}
 
 	body {
-		@apply bg-background text-brand m-0 min-h-screen;
+		@apply m-0 min-h-screen antialiased;
+		background:
+			radial-gradient(circle at top, rgba(208, 142, 41, 0.05), transparent 34%),
+			linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(251, 250, 246, 0.55) 18%, rgba(251, 250, 246, 0.96) 100%),
+			var(--color-page);
+		color: var(--color-ink);
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	::selection {
+		background: rgba(208, 142, 41, 0.22);
+		color: var(--color-ink);
 	}
 
 	a {
-		@apply transition-colors duration-200;
+		color: inherit;
+		text-decoration: none;
+		transition:
+			color 180ms ease,
+			border-color 180ms ease,
+			background-color 180ms ease,
+			transform 180ms ease,
+			opacity 180ms ease;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+}
+
+@layer components {
+	.site-shell {
+		@apply relative overflow-x-hidden;
+	}
+
+	.page-frame {
+		width: min(1280px, calc(100vw - (var(--page-padding) * 2)));
+		margin: 0 auto;
+	}
+
+	.section-shell {
+		@apply relative py-14 md:py-20 lg:py-24;
+	}
+
+	.section-divider {
+		border-top: 1px solid var(--color-line);
+	}
+
+	.eyebrow {
+		@apply text-[0.7rem] font-semibold uppercase tracking-[0.34em] md:text-xs;
+		color: var(--color-accent);
+	}
+
+	.section-title {
+		@apply text-3xl font-semibold leading-[0.95] sm:text-4xl md:text-5xl lg:text-6xl;
+		letter-spacing: -0.04em;
+	}
+
+	.section-lead {
+		@apply max-w-3xl text-base leading-7 md:text-lg md:leading-8;
+		color: var(--color-muted);
+	}
+
+	.editorial-panel {
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 253, 250, 0.99));
+		border: 1px solid rgba(217, 207, 192, 0.9);
+		box-shadow: var(--shadow-editorial);
+		@apply rounded-[2rem];
+	}
+
+	.editorial-card {
+		background: rgba(255, 255, 255, 0.92);
+		border: 1px solid rgba(217, 207, 192, 0.88);
+		@apply rounded-[1.75rem];
+	}
+
+	.kicker-rule {
+		position: relative;
+		padding-left: 3.25rem;
+	}
+
+	.kicker-rule::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 2.5rem;
+		height: 1px;
+		background: rgba(95, 107, 133, 0.55);
+	}
+
+	.cta-primary {
+		@apply inline-flex items-center justify-center rounded-full px-6 py-3 text-xs font-semibold uppercase tracking-[0.26em] md:px-8 md:py-3.5 md:text-sm;
+		background: var(--color-ink);
+		color: #fff;
+	}
+
+	.cta-primary:hover {
+		background: var(--color-accent);
+		transform: translateY(-1px);
+	}
+
+	.cta-secondary {
+		@apply inline-flex items-center justify-center rounded-full px-6 py-3 text-xs font-semibold uppercase tracking-[0.26em] md:px-8 md:py-3.5 md:text-sm;
+		border: 1px solid rgba(29, 47, 80, 0.18);
+		background: rgba(255, 255, 255, 0.56);
+	}
+
+	.cta-secondary:hover {
+		border-color: var(--color-accent);
+		color: var(--color-accent);
+	}
+
+	.stat-value {
+		@apply text-3xl font-semibold sm:text-4xl md:text-5xl;
+		letter-spacing: -0.05em;
+	}
+
+	.reveal {
+		opacity: 0;
+		transform: translateY(30px);
+		transition:
+			opacity 700ms ease,
+			transform 700ms ease;
+		transition-delay: var(--reveal-delay, 0ms);
+	}
+
+	.reveal.is-visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	.legal-richtext {
+		@apply mx-auto flex max-w-4xl flex-col gap-8 px-5 pb-20 pt-32 md:px-8 md:pt-40;
+	}
+
+	.legal-richtext header {
+		@apply flex flex-col gap-4 border-b pb-8;
+		border-color: rgba(217, 207, 192, 0.9);
+	}
+
+	.legal-richtext section {
+		@apply editorial-panel p-7 md:p-10;
+	}
+
+	.legal-richtext h1 {
+		@apply text-4xl font-semibold leading-tight md:text-6xl;
+		letter-spacing: -0.04em;
+	}
+
+	.legal-richtext h2 {
+		@apply mb-4 text-sm font-semibold uppercase tracking-[0.28em];
+		color: var(--color-accent);
+	}
+
+	.legal-richtext p,
+	.legal-richtext ul {
+		@apply m-0 text-base leading-7 md:text-lg md:leading-8;
+		color: var(--color-muted);
+	}
+
+	.legal-richtext ul {
+		@apply pl-5;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		scroll-behavior: auto;
+	}
+
+	.reveal,
+	.reveal.is-visible,
+	a,
+	.cta-primary,
+	.cta-secondary {
+		transition: none;
+		transform: none;
+		opacity: 1;
 	}
 }

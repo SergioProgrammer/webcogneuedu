@@ -1,126 +1,76 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout>
-	<main class="legal-page">
-		<header>
-			<p class="eyebrow">Legal documentation</p>
-			<h1>Legal Terms & Conditions of Use</h1>
-			<p class="lead">
-				This website presents the research activity of the CogNeuroEdu group at the UNED Faculty of Education. Accessing
-				the site implies acceptance of the conditions described below.
+<Layout title="Términos legales | CogNeuroEdu" description="Términos legales y condiciones de uso del sitio web de CogNeuroEdu.">
+	<Navbar />
+	<main class="legal-richtext">
+		<header class="reveal">
+			<p class="eyebrow">Documentación legal</p>
+			<h1>Términos legales y condiciones de uso</h1>
+			<p class="section-lead">
+				Este sitio presenta la actividad investigadora del grupo CogNeuroEdu en la Facultad de Educación de la UNED. El
+				acceso y uso de la web implica la aceptación de las condiciones descritas a continuación.
 			</p>
 		</header>
 
-		<section>
-			<h2>1. Identification</h2>
+		<section class="reveal" style="--reveal-delay: 80ms;">
+			<h2>1. Identificación</h2>
 			<p>
-				Controller: CogNeuroEdu Research Group · CogNeUEDU Chair (UNED). Address: C/ Juan del Rosal 14, 28040 Madrid,
-				Spain. Contact emails:
+				Responsable: CogNeuroEdu Research Group · CogNeUEDU Chair (UNED). Dirección: C/ Juan del Rosal 14, 28040 Madrid,
+				España. Correos:
 				<a href="mailto:cogneuroedu@edu.uned.es">cogneuroedu@edu.uned.es</a> /
-				<a href="mailto:mt.m.aragoneses@edu.uned.es">mt.m.aragoneses@edu.uned.es</a>. Phone:
+				<a href="mailto:mt.m.aragoneses@edu.uned.es">mt.m.aragoneses@edu.uned.es</a>. Teléfono:
 				<a href="tel:+34913987384">+34 91 398 73 84</a>.
 			</p>
 		</section>
 
-		<section>
-			<h2>2. Purpose</h2>
+		<section class="reveal" style="--reveal-delay: 120ms;">
+			<h2>2. Finalidad</h2>
 			<p>
-				The site provides information about research, transfer projects, and collaboration calls related to speech therapy
-				and neuroeducation. Content is informative and may be updated without prior notice to guarantee accuracy.
+				La web ofrece información sobre investigación, proyectos de transferencia y convocatorias de colaboración
+				relacionadas con logopedia y neuroeducación. Los contenidos son informativos y pueden actualizarse sin previo aviso
+				para garantizar precisión.
 			</p>
 		</section>
 
-		<section>
-			<h2>3. Conditions of use</h2>
+		<section class="reveal" style="--reveal-delay: 160ms;">
+			<h2>3. Condiciones de uso</h2>
 			<ul>
-				<li>Visitors commit to using the website respectfully and lawfully.</li>
-				<li>Reproducing large portions of content requires prior written authorization from CogNeuroEdu.</li>
-				<li>External links are provided for convenience; UNED does not endorse third-party content.</li>
+				<li>Las personas usuarias se comprometen a utilizar el sitio de forma respetuosa y conforme a la ley.</li>
+				<li>La reproducción de partes sustanciales del contenido requiere autorización previa por escrito.</li>
+				<li>Los enlaces externos se facilitan por utilidad informativa y no implican respaldo institucional automático.</li>
 			</ul>
 		</section>
 
-		<section>
-			<h2>4. Intellectual property</h2>
+		<section class="reveal" style="--reveal-delay: 200ms;">
+			<h2>4. Propiedad intelectual</h2>
 			<p>
-				All texts, audiovisual pieces, and graphic resources belong to CogNeuroEdu or the credited authors. UNED and
-				CogNeuroEdu brands are protected. Citing content is allowed when linking to the original source and acknowledging
-				UNED.
+				Los textos, piezas audiovisuales y recursos gráficos pertenecen a CogNeuroEdu o a sus autores acreditados. Las
+				marcas UNED y CogNeuroEdu están protegidas. La cita de contenidos es posible siempre que se enlace la fuente
+				original y se reconozca su procedencia.
 			</p>
 		</section>
 
-		<section>
-			<h2>5. Liability</h2>
+		<section class="reveal" style="--reveal-delay: 240ms;">
+			<h2>5. Responsabilidad</h2>
 			<p>
-				Content must not be interpreted as clinical diagnosis or therapeutic prescription. For any intervention, please
-				contact accredited professionals from the Faculty of Education or partner centers. Visitors assume responsibility
-				for how they use the information provided.
+				Los contenidos no deben interpretarse como diagnóstico clínico ni prescripción terapéutica. Para intervenciones
+				específicas, debe acudirse a profesionales acreditados de la Facultad de Educación o de centros colaboradores.
 			</p>
 		</section>
 
-		<section id="rgpd">
-			<h2>6. Data protection (GDPR)</h2>
+		<section class="reveal" id="rgpd" style="--reveal-delay: 280ms;">
+			<h2>6. Protección de datos</h2>
 			<p>
-				Data collected via forms or email is used solely to answer inquiries or coordinate academic collaboration, based on
-				the public interest exception for scientific research. Data is stored on UNED infrastructure and kept only for the
-				time needed to meet administrative obligations. You can exercise access, rectification, or erasure rights by
-				emailing <a href="mailto:cogneuroedu@edu.uned.es">cogneuroedu@edu.uned.es</a>.
+				Los datos recogidos por correo electrónico o mediante formularios se utilizan exclusivamente para responder
+				consultas o coordinar colaboración académica, con base en el interés público de la investigación científica. La
+				información se almacena en infraestructura de la UNED y se conserva únicamente durante el tiempo necesario para
+				cumplir obligaciones administrativas.
 			</p>
 		</section>
 	</main>
+	<Footer />
 </Layout>
-
-<style>
-	.legal-page {
-		padding: calc(var(--nav-height, 72px) + 3rem) var(--page-padding, clamp(1.5rem, 4vw, 3rem)) 3rem;
-		max-width: 960px;
-		margin: 0 auto;
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
-
-	header .eyebrow {
-		text-transform: uppercase;
-		letter-spacing: 0.25em;
-		font-size: 0.8rem;
-		color: #666;
-		margin: 0;
-	}
-
-	header h1 {
-		font-size: clamp(2rem, 3vw, 3rem);
-		margin: 0.5rem 0;
-	}
-
-	.lead {
-		font-size: 1.05rem;
-		color: #3a3a3a;
-		margin: 0;
-	}
-
-	section h2 {
-		margin-bottom: 0.5rem;
-		font-size: 1.2rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-	}
-
-	p,
-	ul {
-		margin: 0;
-		line-height: 1.7;
-		color: #1f1f1f;
-	}
-
-	ul {
-		padding-left: 1.25rem;
-	}
-
-	a {
-		color: inherit;
-		font-weight: 600;
-	}
-</style>

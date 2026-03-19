@@ -1,118 +1,74 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout>
-	<main class="privacy-page">
-		<header>
-			<p class="eyebrow">Data protection</p>
-			<h1>Privacy Policy</h1>
-			<p class="lead">
-				CogNeuroEdu processes personal information in accordance with Regulation (EU) 2016/679 (GDPR) and Spanish
-				legislation applicable to the Universidad Nacional de Educación a Distancia.
+<Layout title="Política de privacidad | CogNeuroEdu" description="Política de privacidad y tratamiento de datos de CogNeuroEdu en la UNED.">
+	<Navbar />
+	<main class="legal-richtext">
+		<header class="reveal">
+			<p class="eyebrow">Protección de datos</p>
+			<h1>Política de privacidad</h1>
+			<p class="section-lead">
+				CogNeuroEdu trata la información personal conforme al Reglamento (UE) 2016/679 y a la normativa española
+				aplicable a la Universidad Nacional de Educación a Distancia.
 			</p>
 		</header>
 
-		<section>
-			<h2>Controller</h2>
+		<section class="reveal" style="--reveal-delay: 80ms;">
+			<h2>Responsable</h2>
 			<p>
-				CogNeuroEdu Research Group · Faculty of Education (UNED). C/ Juan del Rosal 14, 28040 Madrid, Spain.
-				Emails:
+				CogNeuroEdu Research Group · Faculty of Education (UNED). C/ Juan del Rosal 14, 28040 Madrid, Spain. Emails:
 				<a href="mailto:cogneuroedu@edu.uned.es">cogneuroedu@edu.uned.es</a>,
 				<a href="mailto:mt.m.aragoneses@edu.uned.es">mt.m.aragoneses@edu.uned.es</a>. Phone:
 				<a href="tel:+34913987384">+34 91 398 73 84</a>.
 			</p>
 		</section>
 
-		<section>
-			<h2>Purpose</h2>
+		<section class="reveal" style="--reveal-delay: 120ms;">
+			<h2>Finalidad</h2>
 			<p>
-				Data gathered through forms, emails, or participation initiatives is used to answer queries, coordinate research
-				actions, manage events, and send communications related to CogNeuroEdu's scientific activity. No automated
-				decision-making or commercial profiling is performed.
+				Los datos recogidos a través de formularios, correos electrónicos o iniciativas de participación se utilizan para
+				responder consultas, coordinar acciones de investigación, gestionar eventos y enviar comunicaciones relacionadas con
+				la actividad científica de CogNeuroEdu. No se realizan decisiones automatizadas ni perfiles comerciales.
 			</p>
 		</section>
 
-		<section>
-			<h2>Legal basis</h2>
+		<section class="reveal" style="--reveal-delay: 160ms;">
+			<h2>Base jurídica</h2>
 			<p>
-				The lawful basis is the public interest in scientific research and the academic/contractual relationship with
-				collaborators. When explicit consent is required, it will be requested clearly and may be withdrawn at any time.
+				La base legítima es el interés público en la investigación científica y la relación académica o contractual con las
+				personas colaboradoras. Cuando sea necesario consentimiento explícito, se solicitará de forma clara y podrá
+				retirarse en cualquier momento.
 			</p>
 		</section>
 
-		<section>
-			<h2>Recipients</h2>
+		<section class="reveal" style="--reveal-delay: 200ms;">
+			<h2>Destinatarios</h2>
 			<p>
-				Data is stored on UNED infrastructure and shared only with partner institutions when a specific research or
-				transfer agreement exists.
+				La información se almacena en infraestructura de la UNED y solo se comparte con instituciones colaboradoras cuando
+				existe un acuerdo específico de investigación o transferencia.
 			</p>
 		</section>
 
-		<section>
-			<h2>Retention</h2>
+		<section class="reveal" style="--reveal-delay: 240ms;">
+			<h2>Conservación</h2>
 			<p>
-				Information is preserved while necessary to address the original request and meet UNED's legal obligations. Once
-				these periods expire, data is blocked or anonymized according to university procedures.
+				Los datos se conservan mientras sean necesarios para atender la solicitud original y cumplir obligaciones legales
+				de la universidad. Una vez finalizados esos plazos, se bloquean o anonimizan conforme a los procedimientos
+				institucionales.
 			</p>
 		</section>
 
-		<section>
-			<h2>Rights</h2>
+		<section class="reveal" style="--reveal-delay: 280ms;">
+			<h2>Derechos</h2>
 			<p>
-				You may exercise your rights of access, rectification, erasure, objection, restriction, or portability by emailing
-				<a href="mailto:cogneuroedu@edu.uned.es">cogneuroedu@edu.uned.es</a>. You may also lodge a complaint with the
-				Spanish Data Protection Agency if you consider that the processing does not comply with current regulations.
+				Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación o portabilidad escribiendo a
+				<a href="mailto:cogneuroedu@edu.uned.es">cogneuroedu@edu.uned.es</a>. También puedes presentar una reclamación ante
+				la Agencia Española de Protección de Datos si consideras que el tratamiento no se ajusta a la normativa vigente.
 			</p>
 		</section>
 	</main>
+	<Footer />
 </Layout>
-
-<style>
-	.privacy-page {
-		padding: calc(var(--nav-height, 72px) + 3rem) var(--page-padding, clamp(1.5rem, 4vw, 3rem)) 3rem;
-		max-width: 960px;
-		margin: 0 auto;
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-		gap: 2rem;
-	}
-
-	header .eyebrow {
-		text-transform: uppercase;
-		letter-spacing: 0.25em;
-		font-size: 0.8rem;
-		color: #666;
-		margin: 0;
-	}
-
-	header h1 {
-		font-size: clamp(2rem, 3vw, 3rem);
-		margin: 0.5rem 0;
-	}
-
-	.lead {
-		font-size: 1.05rem;
-		color: #3a3a3a;
-		margin: 0;
-	}
-
-	section h2 {
-		margin-bottom: 0.5rem;
-		font-size: 1.2rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-	}
-
-	p {
-		margin: 0;
-		line-height: 1.7;
-		color: #1f1f1f;
-	}
-
-	a {
-		color: inherit;
-		font-weight: 600;
-	}
-</style>
